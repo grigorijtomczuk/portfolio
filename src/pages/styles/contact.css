@@ -7,7 +7,7 @@
 .contact-logo {
 	display: flex;
 	position: fixed;
-	top: 4vh;
+	top: 3vh;
 	border: 1px solid white;
 	border-radius: 50%;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);

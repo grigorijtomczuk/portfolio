@@ -14,9 +14,10 @@ import Works from "@/components/homepage/works";
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 
 const Homepage = () => {
+	const initialLogoSize = 80;
+	const endLogoSize = 40;
+	const [logoSize, setLogoSize] = useState(initialLogoSize);
 	const [stayLogo, setStayLogo] = useState(false);
-	const [logoSize, setLogoSize] = useState(80);
-	const [oldLogoSize, setOldLogoSize] = useState(80);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -24,36 +25,28 @@ const Homepage = () => {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			let scroll = Math.round(window.scrollY);
+			setLogoSize(initialLogoSize - window.scrollY * 0.35);
 
-			let newLogoSize = 80 - (scroll * 4) / 10;
-
-			if (newLogoSize < oldLogoSize) {
-				if (newLogoSize > 40) {
-					setLogoSize(newLogoSize);
-					setOldLogoSize(newLogoSize);
-					setStayLogo(false);
-				} else {
-					setStayLogo(true);
-				}
+			if (window.scrollY > window.innerHeight * 0.125) {
+				setLogoSize(endLogoSize);
+				setStayLogo(true);
 			} else {
-				setLogoSize(newLogoSize);
 				setStayLogo(false);
 			}
 		};
 
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
-	}, [logoSize, oldLogoSize]);
+	}, [logoSize]);
 
 	const logoStyle = {
 		display: "flex",
 		position: stayLogo ? "fixed" : "relative",
 		top: stayLogo ? "3vh" : "auto",
 		zIndex: 999,
-		border: stayLogo ? "1px solid white" : "none",
-		borderRadius: stayLogo ? "50%" : "none",
-		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
+		border: "1px solid white",
+		borderRadius: "50%",
+		boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)",
 	} as React.CSSProperties;
 
 	useEffect(() => {

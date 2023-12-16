@@ -1,4 +1,4 @@
-// Все ломается, пока не использовать
+// CSS reset breaks things, don't use it for now
 // import "@/reset.css";
 
 import "@/index.css";
