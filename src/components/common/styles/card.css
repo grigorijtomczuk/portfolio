@@ -19,17 +19,16 @@
 
 .card-icon {
 	color: var(--tertiary-color);
-	font-size: 15px;
+	font-size: 18px;
 }
 
 .card-title {
 	padding-left: 20px;
 	color: var(--secondary-color);
 	font-weight: 650;
-	font-size: 14px;
+	font-size: 18px;
 }
 
 .card-body {
 	padding-top: 40px;
-	font-size: 15px;
 }

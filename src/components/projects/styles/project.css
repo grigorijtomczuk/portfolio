@@ -38,12 +38,13 @@
 	padding-top: 15px;
 	color: var(--primary-color);
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 18px;
 	font-family: var(--secondary-font);
 }
 
 .project-description {
 	color: var(--secondary-color);
+	font-size: 16px;
 }
 
 .project-link {
@@ -51,13 +52,13 @@
 	align-items: center;
 	padding-top: 20px;
 	color: var(--secondary-color);
-	font-size: 12px;
+	font-size: 14px;
 	transition: color 0.3s ease;
 }
 
 .project-link-icon {
 	padding-left: 5px;
-	font-size: 13px;
+	font-size: 16px;
 }
 
 .project-link-text {
