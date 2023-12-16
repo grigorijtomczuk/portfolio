@@ -1,6 +1,6 @@
 import "@/components/about/styles/socials.css";
 
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faStackOverflow } from "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import INFO from "@/data/user";
@@ -24,6 +24,15 @@ const Socials = () => {
 						<FontAwesomeIcon icon={faLinkedin} className="social-icon" />
 					</div>
 					<div className="social-text">LinkedIn</div>
+				</a>
+			</div>
+
+			<div className="social">
+				<a href={INFO.socials.stackoverflow} target="_blank" rel="noreferrer">
+					<div className="social-icon">
+						<FontAwesomeIcon icon={faStackOverflow} className="social-icon" />
+					</div>
+					<div className="social-text">StackOverflow</div>
 				</a>
 			</div>
 

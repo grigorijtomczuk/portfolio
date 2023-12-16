@@ -1,7 +1,7 @@
 import "@/pages/styles/homepage.css";
 
 import React, { useEffect, useState } from "react";
-import { faGithub, faStackOverflow } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faStackOverflow } from "@fortawesome/free-brands-svg-icons";
 
 import AllProjects from "@/components/projects/allProjects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -78,6 +78,9 @@ const Homepage = () => {
 						<div className="homepage-socials">
 							<a className="homepage-social-icon" href={INFO.socials.github} target="_blank" rel="noreferrer">
 								<FontAwesomeIcon icon={faGithub} />
+							</a>
+							<a className="homepage-social-icon" href={INFO.socials.linkedin} target="_blank" rel="noreferrer">
+								<FontAwesomeIcon icon={faLinkedin} />
 							</a>
 							<a className="homepage-social-icon" href={INFO.socials.stackoverflow} target="_blank" rel="noreferrer">
 								<FontAwesomeIcon icon={faStackOverflow} />
