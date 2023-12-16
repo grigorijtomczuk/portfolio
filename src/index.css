@@ -1,0 +1,15 @@
+@import "./data/styles.css";
+
+html {
+	scrollbar-gutter: stable;
+}
+
+body {
+	margin: 0;
+	font-family: var(--primary-font);
+	min-height: 100vh;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
