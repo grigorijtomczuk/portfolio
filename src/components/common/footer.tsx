@@ -26,7 +26,7 @@ const Footer = () => {
 				<div className="footer-credits">
 					<div className="footer-credits-text">
 						Copyright &copy; {new Date().getFullYear()}{" "}
-						<Link to={"https://github.com/grigorijtomczuk"} target="_blank">
+						<Link className="general-link" to={"https://github.com/grigorijtomczuk"} target="_blank">
 							grigorijtomczuk
 						</Link>
 					</div>

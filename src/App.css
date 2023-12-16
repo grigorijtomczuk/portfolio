@@ -85,6 +85,15 @@
 	content: "";
 }
 
+.general-link {
+	color: var(--link-color);
+	transition: color 0.3s ease;
+}
+
+.general-link:hover {
+	color: var(--link-hover-color);
+}
+
 @media (max-width: 1270px) {
 	.page-content:before,
 	.page-content:after {
