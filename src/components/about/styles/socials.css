@@ -2,8 +2,7 @@
 
 .social,
 .email-wrapper {
-	display: flex;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 }
 
 .social a,
@@ -11,9 +10,15 @@
 	text-decoration: none;
 }
 
+.social a:hover .social-text,
+.social a:hover .social-icon {
+	color: var(--primary-color);
+}
+
 .social-icon {
 	color: var(--secondary-color);
 	font-size: 16px;
+	transition: color 0.3s ease;
 }
 
 .social-text {
@@ -22,16 +27,11 @@
 	color: var(--secondary-color);
 	font-weight: 600;
 	font-size: 14px;
-}
-
-.email::before {
-	display: block;
-	margin-top: 2px;
-	padding-top: 2px;
-	border-top: 3px solid #f4f4f5;
-	content: "";
+	transition: color 0.3s ease;
 }
 
 .email-wrapper {
-	padding-top: 20px;
+	position: relative;
+	padding-top: 12px;
+	border-top: 2px solid var(--quaternary-color);
 }

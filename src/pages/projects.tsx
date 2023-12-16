@@ -9,18 +9,14 @@ import { useEffect } from "react";
 
 const Projects = () => {
 	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
-
-	useEffect(() => {
 		document.title = `Проекты | ${INFO.main.title}`;
 	}, []);
 
 	return (
 		<>
 			<div className="page-content">
-				<NavBar active="projects" />
 				<div className="content-wrapper">
+					<NavBar active="projects" />
 					<div className="projects-logo-container">
 						<div className="projects-logo">
 							<Logo width={40} />
@@ -35,9 +31,9 @@ const Projects = () => {
 							<AllProjects />
 						</div>
 					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
+				</div>
+				<div className="page-footer">
+					<Footer />
 				</div>
 			</div>
 		</>

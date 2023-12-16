@@ -1,6 +1,7 @@
 import "@/pages/styles/404.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Footer from "@/components/common/footer";
 import INFO from "@/data/user";
 import { Link } from "react-router-dom";
 import Logo from "@/components/common/logo";
@@ -15,11 +16,11 @@ const Notfound = () => {
 
 	return (
 		<>
-			<div className="not-found page-content">
-				<NavBar />
+			<div className="page-content">
 				<div className="content-wrapper">
+					<NavBar />
 					<div className="notfound-logo-container">
-						<div className="projects-logo">
+						<div className="notfound-logo">
 							<Logo width={40} />
 						</div>
 					</div>
@@ -34,6 +35,9 @@ const Notfound = () => {
 							</Link>
 						</div>
 					</div>
+				</div>
+				<div className="page-footer">
+					<Footer />
 				</div>
 			</div>
 		</>

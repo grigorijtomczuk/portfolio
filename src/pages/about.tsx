@@ -10,18 +10,14 @@ import { useEffect } from "react";
 
 const About = () => {
 	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
-
-	useEffect(() => {
 		document.title = `Обо мне | ${INFO.main.title}`;
 	}, []);
 
 	return (
 		<>
 			<div className="page-content">
-				<NavBar active="about" />
 				<div className="content-wrapper">
+					<NavBar active="about" />
 					<div className="about-logo-container">
 						<div className="about-logo">
 							<Logo width={40} />
@@ -52,9 +48,9 @@ const About = () => {
 							<Socials />
 						</div>
 					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
+				</div>
+				<div className="page-footer">
+					<Footer />
 				</div>
 			</div>
 		</>

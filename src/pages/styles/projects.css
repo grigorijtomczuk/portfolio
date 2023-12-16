@@ -22,6 +22,10 @@
 	padding-top: 120px;
 }
 
+.projects-subtitle {
+	width: 100%;
+}
+
 @media (max-width: 600px) {
 	.projects-container {
 		padding-top: 60px;

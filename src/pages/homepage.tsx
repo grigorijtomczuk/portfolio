@@ -11,17 +11,13 @@ import INFO from "@/data/user";
 import Logo from "@/components/common/logo";
 import NavBar from "@/components/common/navBar";
 import Works from "@/components/homepage/works";
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Homepage = () => {
 	const initialLogoSize = 80;
 	const endLogoSize = 40;
 	const [logoSize, setLogoSize] = useState(initialLogoSize);
 	const [stayLogo, setStayLogo] = useState(false);
-
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -56,8 +52,8 @@ const Homepage = () => {
 	return (
 		<>
 			<div className="page-content">
-				<NavBar active="home" />
 				<div className="content-wrapper">
+					<NavBar active="home" />
 					<div className="homepage-logo-container">
 						<div style={logoStyle}>
 							<Logo width={logoSize} link={false} />
@@ -89,7 +85,7 @@ const Homepage = () => {
 								<FontAwesomeIcon icon={faStackOverflow} />
 							</a>
 							<a className="homepage-social-icon" href={`mailto:${INFO.main.email}`} rel="noreferrer">
-								<FontAwesomeIcon icon={faMailBulk} />
+								<FontAwesomeIcon icon={faEnvelope} />
 							</a>
 						</div>
 
@@ -102,11 +98,10 @@ const Homepage = () => {
 								<Works />
 							</div>
 						</div>
-
-						<div className="page-footer">
-							<Footer />
-						</div>
 					</div>
+				</div>
+				<div className="page-footer">
+					<Footer />
 				</div>
 			</div>
 		</>

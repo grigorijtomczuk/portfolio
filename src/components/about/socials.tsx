@@ -1,6 +1,6 @@
 import "@/components/about/styles/socials.css";
 
-import { faGithub, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import INFO from "@/data/user";
@@ -9,15 +9,6 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Socials = () => {
 	return (
 		<div className="socials">
-			{/* <div className="social">
-				<a href={INFO.socials.twitter} target="_blank" rel="noreferrer">
-					<div className="social-icon">
-						<FontAwesomeIcon icon={faTwitter} className="social-icon" />
-					</div>
-					<div className="social-text">Twitter</div>
-				</a>
-			</div> */}
-
 			<div className="social">
 				<a href={INFO.socials.github} target="_blank" rel="noreferrer">
 					<div className="social-icon">
@@ -36,16 +27,7 @@ const Socials = () => {
 				</a>
 			</div>
 
-			{/* <div className="social">
-				<a href={INFO.socials.instagram} target="_blank" rel="noreferrer">
-					<div className="social-icon">
-						<FontAwesomeIcon icon={faInstagram} className="social-icon" />
-					</div>
-					<div className="social-text">Instagram</div>
-				</a>
-			</div> */}
-
-			<div className="email">
+			<div className="social">
 				<div className="email-wrapper">
 					<a href={`mailto:${INFO.main.email}`} rel="noreferrer">
 						<div className="social-icon">
