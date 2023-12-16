@@ -6,7 +6,6 @@ import { faGithub, faLinkedin, faStackOverflow } from "@fortawesome/free-brands-
 import AllProjects from "@/components/projects/allProjects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "@/components/common/footer";
-import HomepageImage from "@/assets/images/homepage.jpg";
 import INFO from "@/data/user";
 import Logo from "@/components/common/logo";
 import NavBar from "@/components/common/navBar";
@@ -70,7 +69,7 @@ const Homepage = () => {
 
 							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
-									<img className="homepage-image" src={HomepageImage} alt="about" draggable="false" />
+									<img className="homepage-image" src={INFO.homepage.image} alt="about" draggable="false" />
 								</div>
 							</div>
 						</div>

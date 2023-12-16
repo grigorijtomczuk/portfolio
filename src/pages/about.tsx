@@ -1,6 +1,5 @@
 import "@/pages/styles/about.css";
 
-import AboutImage from "@/assets/images/about.jpg";
 import Footer from "@/components/common/footer";
 import INFO from "@/data/user";
 import Logo from "@/components/common/logo";
@@ -34,7 +33,7 @@ const About = () => {
 
 							<div className="about-left-side">
 								<div className="about-image-container">
-									<img className="about-image" src={AboutImage} alt="about" draggable="false" />
+									<img className="about-image" src={INFO.about.image} alt="about" draggable="false" />
 								</div>
 
 								<div className="about-socials">
