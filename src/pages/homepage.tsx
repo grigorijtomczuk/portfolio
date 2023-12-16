@@ -1,7 +1,7 @@
 import "@/pages/styles/homepage.css";
 
 import React, { useEffect, useState } from "react";
-import { faGithub, faInstagram, faStackOverflow, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faStackOverflow } from "@fortawesome/free-brands-svg-icons";
 
 import AllProjects from "@/components/projects/allProjects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -82,20 +82,14 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-socials">
-							{/* <a href={INFO.socials.twitter} target="_blank" rel="noreferrer">
-								<FontAwesomeIcon icon={faTwitter} className="homepage-social-icon" />
-							</a> */}
-							<a href={INFO.socials.github} target="_blank" rel="noreferrer">
-								<FontAwesomeIcon icon={faGithub} className="homepage-social-icon" />
+							<a className="homepage-social-icon" href={INFO.socials.github} target="_blank" rel="noreferrer">
+								<FontAwesomeIcon icon={faGithub} />
 							</a>
-							<a href={INFO.socials.stackoverflow} target="_blank" rel="noreferrer">
-								<FontAwesomeIcon icon={faStackOverflow} className="homepage-social-icon" />
+							<a className="homepage-social-icon" href={INFO.socials.stackoverflow} target="_blank" rel="noreferrer">
+								<FontAwesomeIcon icon={faStackOverflow} />
 							</a>
-							{/* <a href={INFO.socials.instagram} target="_blank" rel="noreferrer">
-								<FontAwesomeIcon icon={faInstagram} className="homepage-social-icon" />
-							</a> */}
-							<a href={`mailto:${INFO.main.email}`} rel="noreferrer">
-								<FontAwesomeIcon icon={faMailBulk} className="homepage-social-icon" />
+							<a className="homepage-social-icon" href={`mailto:${INFO.main.email}`} rel="noreferrer">
+								<FontAwesomeIcon icon={faMailBulk} />
 							</a>
 						</div>
 

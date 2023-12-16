@@ -60,10 +60,11 @@
 }
 
 .homepage-social-icon {
-	padding-right: 20px;
+	width: 30px;
+	margin-right: 10px;
 	color: var(--secondary-color);
 	font-size: 25px;
-	transition: color 0.2s ease-in-out;
+	transition: color 0.3s ease;
 }
 
 .homepage-social-icon:hover {
