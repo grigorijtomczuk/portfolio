@@ -40,9 +40,9 @@ const Homepage = () => {
 		position: stayLogo ? "fixed" : "relative",
 		top: stayLogo ? "3vh" : "auto",
 		zIndex: 999,
-		border: "1px solid white",
+		border: "2px solid #ffffff",
 		borderRadius: "50%",
-		boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)",
+		boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
 	} as React.CSSProperties;
 
 	useEffect(() => {
@@ -70,9 +70,7 @@ const Homepage = () => {
 
 							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
-									<div className="homepage-image-wrapper">
-										<img className="homepage-image" src={HomepageImage} alt="about" draggable="false" />
-									</div>
+									<img className="homepage-image" src={HomepageImage} alt="about" draggable="false" />
 								</div>
 							</div>
 						</div>

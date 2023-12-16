@@ -34,9 +34,7 @@ const About = () => {
 
 							<div className="about-left-side">
 								<div className="about-image-container">
-									<div className="about-image-wrapper">
-										<img className="about-image" src={AboutImage} alt="about" draggable="false" />
-									</div>
+									<img className="about-image" src={AboutImage} alt="about" draggable="false" />
 								</div>
 
 								<div className="about-socials">
