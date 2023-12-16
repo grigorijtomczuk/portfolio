@@ -1,7 +1,7 @@
-import "./styles/allProjects.css";
+import "@/components/projects/styles/allProjects.css";
 
-import INFO from "../../data/user";
-import Project from "./project";
+import INFO from "@/data/user";
+import Project from "@/components/projects/project";
 
 const AllProjects = () => {
 	return (

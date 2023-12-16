@@ -1,12 +1,12 @@
-import "./app.css";
+import "@/app.css";
 
 import { Route, Routes } from "react-router-dom";
 
-import About from "./pages/about";
-import Contact from "./pages/contact";
-import Homepage from "./pages/homepage";
-import Notfound from "./pages/404";
-import Projects from "./pages/projects";
+import About from "@/pages/about";
+import Contact from "@/pages/contact";
+import Homepage from "@/pages/homepage";
+import Notfound from "@/pages/404";
+import Projects from "@/pages/projects";
 
 function App() {
 	return (

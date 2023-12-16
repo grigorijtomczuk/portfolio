@@ -1,11 +1,11 @@
-import "./styles/about.css";
+import "@/pages/styles/about.css";
 
-import AboutImage from "../assets/images/about.jpg";
-import Footer from "../components/common/footer";
-import INFO from "../data/user";
-import Logo from "../components/common/logo";
-import NavBar from "../components/common/navBar";
-import Socials from "../components/about/socials";
+import AboutImage from "@/assets/images/about.jpg";
+import Footer from "@/components/common/footer";
+import INFO from "@/data/user";
+import Logo from "@/components/common/logo";
+import NavBar from "@/components/common/navBar";
+import Socials from "@/components/about/socials";
 import { useEffect } from "react";
 
 const About = () => {

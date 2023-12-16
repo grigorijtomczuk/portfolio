@@ -1,6 +1,6 @@
-import "./styles/logo.css";
+import "@/components/common/styles/logo.css";
 
-import INFO from "../../data/user";
+import INFO from "@/data/user";
 import { Link } from "react-router-dom";
 
 const Logo = (props: { width: any; link?: any }) => {

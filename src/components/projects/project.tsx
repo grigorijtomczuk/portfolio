@@ -1,4 +1,4 @@
-import "./styles/project.css";
+import "@/components/projects/styles/project.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";

@@ -1,10 +1,10 @@
-import "./styles/404.css";
+import "@/pages/styles/404.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import INFO from "../data/user";
+import INFO from "@/data/user";
 import { Link } from "react-router-dom";
-import Logo from "../components/common/logo";
-import NavBar from "../components/common/navBar";
+import Logo from "@/components/common/logo";
+import NavBar from "@/components/common/navBar";
 import { faFaceSadTear } from "@fortawesome/free-regular-svg-icons";
 import { useEffect } from "react";
 

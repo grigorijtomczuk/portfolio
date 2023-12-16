@@ -1,9 +1,9 @@
 // Все ломается, пока не использовать
-// import "./reset.css";
+// import "@/reset.css";
 
-import "./index.css";
+import "@/index.css";
 
-import App from "./App";
+import App from "@/App";
 import { HashRouter } from "react-router-dom";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";

@@ -1,9 +1,9 @@
-import "./styles/socials.css";
+import "@/components/about/styles/socials.css";
 
 import { faGithub, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import INFO from "../../data/user";
+import INFO from "@/data/user";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Socials = () => {

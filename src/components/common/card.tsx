@@ -1,4 +1,4 @@
-import "./styles/card.css";
+import "@/components/common/styles/card.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

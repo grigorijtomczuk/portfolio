@@ -1,10 +1,10 @@
-import "./styles/contact.css";
+import "@/pages/styles/contact.css";
 
-import Footer from "../components/common/footer";
-import INFO from "../data/user";
-import Logo from "../components/common/logo";
-import NavBar from "../components/common/navBar";
-import Socials from "../components/about/socials";
+import Footer from "@/components/common/footer";
+import INFO from "@/data/user";
+import Logo from "@/components/common/logo";
+import NavBar from "@/components/common/navBar";
+import Socials from "@/components/about/socials";
 import { useEffect } from "react";
 
 const Contact = () => {

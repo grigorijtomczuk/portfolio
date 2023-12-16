@@ -1,16 +1,16 @@
-import "./styles/homepage.css";
+import "@/pages/styles/homepage.css";
 
 import React, { useEffect, useState } from "react";
 import { faGithub, faInstagram, faStackOverflow, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-import AllProjects from "../components/projects/allProjects";
+import AllProjects from "@/components/projects/allProjects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Footer from "../components/common/footer";
-import HomepageImage from "../assets/images/homepage.jpg";
-import INFO from "../data/user";
-import Logo from "../components/common/logo";
-import NavBar from "../components/common/navBar";
-import Works from "../components/homepage/works";
+import Footer from "@/components/common/footer";
+import HomepageImage from "@/assets/images/homepage.jpg";
+import INFO from "@/data/user";
+import Logo from "@/components/common/logo";
+import NavBar from "@/components/common/navBar";
+import Works from "@/components/homepage/works";
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 
 const Homepage = () => {

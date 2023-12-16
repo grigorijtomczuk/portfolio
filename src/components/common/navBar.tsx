@@ -1,4 +1,4 @@
-import "./styles/navBar.css";
+import "@/components/common/styles/navBar.css";
 
 import { Link } from "react-router-dom";
 

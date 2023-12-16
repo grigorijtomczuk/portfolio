@@ -1,10 +1,10 @@
-import "./styles/projects.css";
+import "@/pages/styles/projects.css";
 
-import AllProjects from "../components/projects/allProjects";
-import Footer from "../components/common/footer";
-import INFO from "../data/user";
-import Logo from "../components/common/logo";
-import NavBar from "../components/common/navBar";
+import AllProjects from "@/components/projects/allProjects";
+import Footer from "@/components/common/footer";
+import INFO from "@/data/user";
+import Logo from "@/components/common/logo";
+import NavBar from "@/components/common/navBar";
 import { useEffect } from "react";
 
 const Projects = () => {
