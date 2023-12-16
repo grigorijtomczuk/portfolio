@@ -37,7 +37,7 @@
 	margin-bottom: 1em;
 	padding-top: 15px;
 	color: var(--primary-color);
-	font-weight: 700;
+	font-weight: var(--font-bold);
 	font-size: 18px;
 	font-family: var(--secondary-font);
 }
@@ -63,7 +63,7 @@
 
 .project-link-text {
 	padding-left: 20px;
-	font-weight: 700;
+	font-weight: var(--font-bold);
 }
 
 @media (max-width: 600px) {

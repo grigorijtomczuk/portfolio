@@ -25,7 +25,7 @@
 }
 
 .footer-nav-link-item {
-	font-weight: bold;
+	font-weight: var(--font-bold);
 	font-size: 14px;
 }
 

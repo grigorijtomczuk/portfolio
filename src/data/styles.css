@@ -10,6 +10,9 @@
 
 	/* ------- fonts ------- */
 	--primary-font: "Roboto", sans-serif;
-	--secondary-font: "Roboto", sans-serif;
+	--secondary-font: "Roboto Slab", sans-serif;
+	--font-bold: 500;
+	--font-normal: 400;
+	--font-light: 100;
 	/* --------------------- */
 }

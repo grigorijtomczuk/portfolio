@@ -57,7 +57,7 @@
 .title {
 	width: 70%;
 	color: var(--primary-color);
-	font-weight: 700;
+	font-weight: var(--font-bold);
 	font-size: 48px;
 	font-family: var(--secondary-font);
 }
