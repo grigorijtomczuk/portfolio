@@ -5,6 +5,7 @@ import INFO from "@/data/user";
 import Logo from "@/components/common/logo";
 import NavBar from "@/components/common/navBar";
 import Socials from "@/components/about/socials";
+import { renderHtml } from "@/utils/utils";
 import { useEffect } from "react";
 
 const About = () => {
@@ -32,7 +33,7 @@ const About = () => {
 						<div className="about-main">
 							<div className="about-left-side">
 								<div className="title about-title">{INFO.about.title}</div>
-								<div className="subtitle about-subtitle">{INFO.about.description}</div>
+								<div className="subtitle about-subtitle">{renderHtml(INFO.about.description)}</div>
 							</div>
 
 							<div className="about-right-side">

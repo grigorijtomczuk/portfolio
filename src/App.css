@@ -29,8 +29,8 @@
 	top: 0;
 	bottom: 0;
 	width: calc((100% - 1200px) / 2);
-	border-left: 2px solid var(--quaternary-color);
 	border-right: 2px solid var(--quaternary-color);
+	border-left: 2px solid var(--quaternary-color);
 	content: "";
 	background-color: var(--light-gray);
 }
@@ -86,6 +86,13 @@
 .general-link {
 	color: var(--link-color);
 	transition: color 0.3s ease;
+}
+
+.code-span {
+	padding: 2px 8px;
+	border-radius: 8px;
+	font-family: var(--monospaced-font);
+	background-color: var(--quaternary-color);
 }
 
 ::selection {
