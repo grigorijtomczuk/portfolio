@@ -14,7 +14,7 @@
 
 .project:hover {
 	opacity: 1;
-	background: #fafafa;
+	background: var(--light-gray);
 }
 
 .project:hover .project-link {

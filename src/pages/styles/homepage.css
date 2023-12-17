@@ -4,8 +4,16 @@
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	padding-top: 130px;
 	height: 80px;
+	padding-top: 130px;
+}
+
+.homepage-logo {
+	display: flex;
+	z-index: 999;
+	border: 2px solid var(--white);
+	border-radius: 50%;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .homepage-container {
@@ -46,8 +54,8 @@
 	max-width: 100%;
 	border-radius: 10%;
 	overflow: hidden;
-	transform: rotate(3deg);
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	transform: rotate(3deg);
 }
 
 .homepage-socials {

@@ -35,13 +35,8 @@ const Homepage = () => {
 	}, [logoSize]);
 
 	const logoStyle = {
-		display: "flex",
 		position: stayLogo ? "fixed" : "relative",
 		top: stayLogo ? "3vh" : "auto",
-		zIndex: 999,
-		border: "2px solid #ffffff",
-		borderRadius: "50%",
-		boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
 	} as React.CSSProperties;
 
 	useEffect(() => {
@@ -55,7 +50,7 @@ const Homepage = () => {
 					<NavBar active="home" />
 
 					<div className="homepage-logo-container">
-						<div style={logoStyle}>
+						<div className="homepage-logo" style={logoStyle}>
 							<Logo width={logoSize} link={false} />
 						</div>
 					</div>
