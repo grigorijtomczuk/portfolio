@@ -9,7 +9,7 @@ import { useEffect } from "react";
 
 const About = () => {
 	useEffect(() => {
-		document.title = `Обо мне | ${INFO.main.title}`;
+		document.title = `Обо мне ${INFO.main.titleSeparator} ${INFO.main.title}`;
 	}, []);
 
 	return (

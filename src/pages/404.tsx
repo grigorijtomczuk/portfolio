@@ -9,9 +9,9 @@ import NavBar from "@/components/common/navBar";
 import { faFaceSadTear } from "@fortawesome/free-regular-svg-icons";
 import { useEffect } from "react";
 
-const Notfound = () => {
+const NotFound = () => {
 	useEffect(() => {
-		document.title = `404 | ${INFO.main.title}`;
+		document.title = `404 ${INFO.main.titleSeparator} ${INFO.main.title}`;
 	}, []);
 
 	return (
@@ -44,4 +44,4 @@ const Notfound = () => {
 	);
 };
 
-export default Notfound;
+export default NotFound;

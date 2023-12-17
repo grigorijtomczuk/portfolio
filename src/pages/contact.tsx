@@ -5,11 +5,12 @@ import INFO from "@/data/user";
 import Logo from "@/components/common/logo";
 import NavBar from "@/components/common/navBar";
 import Socials from "@/components/about/socials";
+import { renderHtml } from "@/utils/utils";
 import { useEffect } from "react";
 
 const Contact = () => {
 	useEffect(() => {
-		document.title = `Связаться | ${INFO.main.title}`;
+		document.title = `Связаться ${INFO.main.titleSeparator} ${INFO.main.title}`;
 	}, []);
 
 	return (
@@ -26,7 +27,7 @@ const Contact = () => {
 					<div className="contact-main">
 						<div className="contact-container">
 							<div className="title contact-title">{INFO.contact.title}</div>
-							<div className="subtitle contact-subtitle">{INFO.contact.description}</div>
+							<div className="subtitle contact-subtitle">{renderHtml(INFO.contact.description)}</div>
 						</div>
 						<div className="socials-container">
 							<div className="contact-socials">

@@ -11,6 +11,7 @@ import Logo from "@/components/common/logo";
 import NavBar from "@/components/common/navBar";
 import Works from "@/components/homepage/works";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { renderHtml } from "@/utils/utils";
 
 const Homepage = () => {
 	const initialLogoSize = 80;
@@ -59,7 +60,7 @@ const Homepage = () => {
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
 								<div className="title homepage-title">{INFO.homepage.title}</div>
-								<div className="subtitle homepage-subtitle">{INFO.homepage.description}</div>
+								<div className="subtitle homepage-subtitle">{renderHtml(INFO.homepage.description)}</div>
 							</div>
 							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
