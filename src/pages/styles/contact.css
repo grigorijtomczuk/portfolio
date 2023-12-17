@@ -39,3 +39,13 @@
 	/* Use margin top until switching to grid on this page */
 	margin-top: 150px;
 }
+
+@media (max-width: 600px) {
+	.contact-main {
+		flex-direction: column;
+	}
+
+	.contact-logo-container {
+		display: none;
+	}
+}

@@ -33,3 +33,10 @@
 .card-body {
 	padding-top: 40px;
 }
+
+@media (max-width: 600px) {
+	.card {
+		width: 95%;
+		margin: 0 auto;
+	}
+}

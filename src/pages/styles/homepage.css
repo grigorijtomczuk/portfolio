@@ -96,7 +96,7 @@
 
 	.homepage-first-area-left-side {
 		display: flex;
-		flex-direction: column; /* Changed: set direction to column */
+		flex-direction: column;
 		align-items: flex-start;
 		order: 2;
 		width: 100%;
@@ -121,9 +121,7 @@
 
 	.homepage-image-container {
 		order: 1;
-		margin-left: 10px;
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: 75px;
 	}
 
 	.homepage-after-title {
@@ -136,7 +134,13 @@
 
 	.homepage-works {
 		flex-basis: auto;
-		margin-right: -25px;
-		margin-left: -25px;
+	}
+
+	.homepage-logo-container {
+		display: none;
+	}
+
+	.homepage-socials {
+		margin-top: 50px;
 	}
 }

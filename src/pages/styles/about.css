@@ -71,7 +71,7 @@
 	}
 
 	.about-subtitle {
-		padding-top: 20px !important;
+		margin-top: 10px;
 	}
 
 	.about-right-side {
@@ -82,10 +82,6 @@
 	.about-left-side {
 		flex-basis: 100%;
 		order: 2;
-	}
-
-	.about-image-container {
-		padding-bottom: 40px;
 	}
 
 	.about-socials {
@@ -100,10 +96,18 @@
 
 @media (max-width: 600px) {
 	.about-container {
-		padding-top: 60px;
+		padding-top: 25px;
+	}
+	.about-image-container {
+		padding-top: 75px;
+		width: 100%;
 	}
 
-	.about-image-container {
-		width: 80%;
+	.about-logo-container {
+		display: none;
+	}
+
+	.about-title {
+		margin-top: 20px;
 	}
 }

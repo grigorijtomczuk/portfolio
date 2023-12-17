@@ -48,17 +48,21 @@
 @media (max-width: 600px) {
 	.footer {
 		flex-direction: column;
-		height: 85px;
+		padding: 15px 40px;
 	}
 
 	.footer-nav-link-list {
+		display: none;
+	}
+
+	/* .footer-nav-link-list {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		width: 100%;
 	}
 
-	.footer-nav-link-list {
-		width: 100%;
-	}
+	.footer-nav-link-item {
+		padding-bottom: 12px;
+	} */
 }

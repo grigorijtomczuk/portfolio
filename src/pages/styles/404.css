@@ -92,4 +92,8 @@
 		padding: 15px 15px;
 		font-size: 18px;
 	}
+
+	.notfound-logo-container {
+		display: none;
+	}
 }
