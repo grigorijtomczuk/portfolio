@@ -53,6 +53,7 @@ const Homepage = () => {
 			<div className="page-content">
 				<div className="content-wrapper">
 					<NavBar active="home" />
+
 					<div className="homepage-logo-container">
 						<div style={logoStyle}>
 							<Logo width={logoSize} link={false} />
@@ -63,10 +64,8 @@ const Homepage = () => {
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
 								<div className="title homepage-title">{INFO.homepage.title}</div>
-
 								<div className="subtitle homepage-subtitle">{INFO.homepage.description}</div>
 							</div>
-
 							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
 									<img className="homepage-image" src={INFO.homepage.image} alt="about" draggable="false" />

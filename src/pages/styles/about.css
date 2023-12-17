@@ -14,19 +14,17 @@
 }
 
 .about-container {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
 	margin: 0;
 	padding-top: 120px;
 }
 
 .about-main {
 	display: flex;
+	justify-content: space-between;
 }
 
-.about-right-side {
-	flex-basis: 900px;
+.about-left-side {
+	flex-basis: 50%;
 }
 
 .about-title {
@@ -34,10 +32,10 @@
 }
 
 .about-subtitle {
-	width: 80% !important;
+	width: auto;
 }
 
-.about-left-side {
+.about-right-side {
 	display: flex;
 	flex-basis: 300px;
 	flex-direction: column;
@@ -78,12 +76,12 @@
 		padding-top: 20px !important;
 	}
 
-	.about-left-side {
+	.about-right-side {
 		flex-basis: 100%;
 		order: 1;
 	}
 
-	.about-right-side {
+	.about-left-side {
 		flex-basis: 100%;
 		order: 2;
 	}

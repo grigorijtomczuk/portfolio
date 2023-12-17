@@ -23,9 +23,9 @@ const Projects = () => {
 						</div>
 					</div>
 					<div className="projects-container">
-						<div className="title projects-title">Студент.</div>
+						<div className="title projects-title">{INFO.projects.title}</div>
 
-						<div className="subtitle projects-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta blanditiis ea recusandae, rerum, minima quo incidunt eaque veniam laudantium mollitia quam. Molestiae perferendis nemo tenetur pariatur asperiores sed blanditiis reiciendis magni quo cumque tempore praesentium iusto harum ab, sequi quia quos ducimus aut facere! At dolorem minus ea, eos excepturi harum modi obcaecati dolore quis ullam iure dolores veritatis sed.</div>
+						<div className="subtitle projects-subtitle">{INFO.projects.description}</div>
 
 						<div className="projects-list">
 							<AllProjects />

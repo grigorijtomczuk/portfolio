@@ -1,7 +1,6 @@
 .all-projects-container {
 	display: flex;
 	flex-direction: row;
-
 	align-items: stretch;
 	padding-top: 30px;
 	padding-bottom: 30px;

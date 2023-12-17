@@ -25,13 +25,12 @@ const About = () => {
 
 					<div className="about-container">
 						<div className="about-main">
-							<div className="about-right-side">
+							<div className="about-left-side">
 								<div className="title about-title">{INFO.about.title}</div>
-
 								<div className="subtitle about-subtitle">{INFO.about.description}</div>
 							</div>
 
-							<div className="about-left-side">
+							<div className="about-right-side">
 								<div className="about-image-container">
 									<img className="about-image" src={INFO.about.image} alt="about" draggable="false" />
 								</div>
@@ -41,6 +40,7 @@ const About = () => {
 								</div>
 							</div>
 						</div>
+
 						<div className="about-socials-mobile">
 							<Socials />
 						</div>

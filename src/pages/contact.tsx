@@ -25,8 +25,8 @@ const Contact = () => {
 
 					<div className="contact-main">
 						<div className="contact-container">
-							<div className="title contact-title">Студент.</div>
-							<div className="subtitle contact-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, velit placeat harum iste deserunt libero temporibus impedit sunt ducimus molestiae, odit non rem necessitatibus modi iusto fugit laboriosam. Natus, ipsam dolorem. Ut ad incidunt, dolore eligendi provident atque ipsum veritatis nihil commodi saepe sunt ab maiores rem facere ratione mollitia adipisci repellat totam magni quasi. Consectetur veniam possimus ducimus pariatur odit laudantium in itaque dicta! At, odio id? Ab excepturi veritatis in illum cum est odio provident laudantium veniam ducimus quam dolores qui accusantium iusto quasi ut distinctio doloribus obcaecati perspiciatis, dignissimos blanditiis, magnam atque facere. Dolorem atque et amet!</div>
+							<div className="title contact-title">{INFO.contact.title}</div>
+							<div className="subtitle contact-subtitle">{INFO.contact.description}</div>
 						</div>
 						<div className="socials-container">
 							<div className="contact-socials">
