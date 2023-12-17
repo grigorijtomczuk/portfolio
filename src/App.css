@@ -101,7 +101,7 @@
 	background: var(--link-color);
 }
 
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
 	.page-content:before,
 	.page-content:after {
 		width: calc((100% - 90%) / 2);
@@ -114,7 +114,7 @@
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
 	.page-content:before,
 	.page-content:after {
 		width: calc((100% - 950px) / 2);
@@ -125,7 +125,7 @@
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1280px) {
 	.content-wrapper {
 		max-width: 90%;
 		margin: 0 auto;

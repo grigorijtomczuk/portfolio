@@ -61,13 +61,13 @@
 	display: none;
 }
 
-@media (max-width: 1024px) {
-	.about-logo {
-		z-index: 100;
-	}
-
+@media (max-width: 1280px) {
 	.about-main {
 		flex-direction: column;
+	}
+
+	.about-title {
+		margin-top: 20px;
 	}
 
 	.about-subtitle {
@@ -75,8 +75,8 @@
 	}
 
 	.about-right-side {
-		flex-basis: 100%;
 		order: 1;
+		align-items: center;
 	}
 
 	.about-left-side {
@@ -92,22 +92,16 @@
 		display: flex;
 		margin-top: 30px;
 	}
-}
 
-@media (max-width: 600px) {
 	.about-container {
 		padding-top: 25px;
 	}
 	.about-image-container {
 		padding-top: 75px;
-		width: 100%;
+		max-width: 100%;
 	}
 
 	.about-logo-container {
 		display: none;
-	}
-
-	.about-title {
-		margin-top: 20px;
 	}
 }

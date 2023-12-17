@@ -4,8 +4,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: stretch;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	margin-top: 30px;
 }
 
 .all-projects-project {
@@ -14,7 +13,7 @@
 	overflow: hidden;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1280px) {
 	.all-projects-project {
 		flex-basis: 100%;
 	}

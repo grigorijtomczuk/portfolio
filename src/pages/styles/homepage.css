@@ -86,10 +86,10 @@
 
 .homepage-works {
 	flex-basis: 600px;
-	padding-top: 30px;
+	margin-top: 30px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
 	.homepage-first-area {
 		flex-direction: column;
 	}
@@ -115,6 +115,7 @@
 	}
 
 	.homepage-first-area-right-side {
+		justify-content: center;
 		order: 1;
 		width: 100%;
 	}
@@ -130,6 +131,7 @@
 
 	.homepage-projects {
 		flex-basis: auto;
+		padding-top: 0;
 	}
 
 	.homepage-works {
@@ -141,6 +143,6 @@
 	}
 
 	.homepage-socials {
-		margin-top: 50px;
+		margin-top: 25px;
 	}
 }
