@@ -7,4 +7,5 @@ html {
 body {
 	margin: 0;
 	font-family: var(--primary-font);
+	background-color: var(--white);
 }

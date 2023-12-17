@@ -90,7 +90,7 @@
 
 ::selection {
 	color: var(--quaternary-color);
-	background: var(--link-color);
+	background-color: var(--link-color);
 }
 
 @media (hover: hover) {
