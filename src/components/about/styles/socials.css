@@ -10,11 +10,6 @@
 	text-decoration: none;
 }
 
-.social a:hover .social-text,
-.social a:hover .social-icon {
-	color: var(--primary-color);
-}
-
 .social-icon {
 	color: var(--secondary-color);
 	font-size: 18px;
@@ -34,6 +29,13 @@
 	position: relative;
 	padding-top: 12px;
 	border-top: 2px solid var(--quaternary-color);
+}
+
+@media (hover: hover) {
+	.social a:hover .social-text,
+	.social a:hover .social-icon {
+		color: var(--primary-color);
+	}
 }
 
 @media (max-width: 1280px) {

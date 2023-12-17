@@ -12,15 +12,6 @@
 	text-decoration: none;
 }
 
-.project:hover {
-	opacity: 1;
-	background: var(--light-gray);
-}
-
-.project:hover .project-link {
-	color: var(--link-color);
-}
-
 .project-container {
 	display: flex;
 	flex-direction: column;
@@ -68,6 +59,17 @@
 .project-link-text {
 	padding-left: 20px;
 	font-weight: var(--font-bold);
+}
+
+@media (hover: hover) {
+	.project:hover {
+		opacity: 1;
+		background: var(--light-gray);
+	}
+
+	.project:hover .project-link {
+		color: var(--link-color);
+	}
 }
 
 @media (max-width: 1280px) {

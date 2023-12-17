@@ -13,10 +13,6 @@
 	background-color: var(--secondary-color);
 }
 
-::-webkit-scrollbar-thumb:hover {
-	background-color: var(--primary-color);
-}
-
 .page-content {
 	display: flex;
 	position: relative;
@@ -92,13 +88,19 @@
 	transition: color 0.3s ease;
 }
 
-.general-link:hover {
-	color: var(--link-hover-color);
-}
-
 ::selection {
 	color: var(--quaternary-color);
 	background: var(--link-color);
+}
+
+@media (hover: hover) {
+	::-webkit-scrollbar-thumb:hover {
+		background-color: var(--primary-color);
+	}
+
+	.general-link:hover {
+		color: var(--link-hover-color);
+	}
 }
 
 @media (max-width: 1280px) {
@@ -112,9 +114,7 @@
 		padding-right: 10%;
 		padding-left: 10%;
 	}
-}
 
-@media (max-width: 1280px) {
 	.page-content:before,
 	.page-content:after {
 		width: calc((100% - 950px) / 2);
@@ -123,9 +123,7 @@
 	.content-wrapper {
 		max-width: 980px;
 	}
-}
 
-@media (max-width: 1280px) {
 	.content-wrapper {
 		max-width: 90%;
 		margin: 0 auto;
