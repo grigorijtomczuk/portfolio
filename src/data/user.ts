@@ -12,8 +12,9 @@ const INFO = {
 
 	socials: {
 		github: "https://github.com/grigorijtomczuk",
-		linkedin: "https://linkedin.com/grigorijtomczuk",
+		linkedin: "https://www.linkedin.com/in/grigorijtomczuk",
 		stackoverflow: "https://stackoverflow.com/users/18726695/grigory-tomchuk",
+		telegram: "https://t.me/grigorijtomczuk",
 	},
 
 	homepage: {

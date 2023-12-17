@@ -1,7 +1,7 @@
 import "@/pages/styles/homepage.css";
 
 import React, { useEffect, useState } from "react";
-import { faGithub, faLinkedin, faStackOverflow } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faStackOverflow, faTelegram } from "@fortawesome/free-brands-svg-icons";
 
 import AllProjects from "@/components/projects/allProjects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -82,6 +82,9 @@ const Homepage = () => {
 							</a>
 							<a className="homepage-social-icon" href={INFO.socials.stackoverflow} target="_blank" rel="noreferrer">
 								<FontAwesomeIcon icon={faStackOverflow} />
+							</a>
+							<a className="homepage-social-icon" href={INFO.socials.telegram} target="_blank" rel="noreferrer">
+								<FontAwesomeIcon icon={faTelegram} />
 							</a>
 							<a className="homepage-social-icon" href={`mailto:${INFO.main.email}`} rel="noreferrer">
 								<FontAwesomeIcon icon={faEnvelope} />
