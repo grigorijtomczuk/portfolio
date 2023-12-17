@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.8f007fdf.css",
+    "main.js": "/portfolio/static/js/main.be5457ef.js",
+    "static/media/about.jpg": "/portfolio/static/media/about.08e0fcca328a2caa83c4.jpg",
+    "static/media/homepage.jpg": "/portfolio/static/media/homepage.31705114d30acf85614a.jpg",
+    "static/media/logo.jpg": "/portfolio/static/media/logo.e73f56d3c33d363ffc54.jpg",
+    "static/media/school.jpg": "/portfolio/static/media/school.2186fddf235c5599d016.jpg",
+    "static/media/suai.svg": "/portfolio/static/media/suai.d6048bd3322cdf060b0f8df864fab723.svg",
+    "index.html": "/portfolio/index.html",
+    "main.8f007fdf.css.map": "/portfolio/static/css/main.8f007fdf.css.map",
+    "main.be5457ef.js.map": "/portfolio/static/js/main.be5457ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f007fdf.css",
+    "static/js/main.be5457ef.js"
+  ]
+}
