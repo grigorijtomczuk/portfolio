@@ -35,3 +35,9 @@
 	padding-top: 12px;
 	border-top: 2px solid var(--quaternary-color);
 }
+
+@media (max-width: 600px) {
+	.socials {
+		width: 100%;
+	}
+}

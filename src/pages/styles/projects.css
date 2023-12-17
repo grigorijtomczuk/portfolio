@@ -28,10 +28,14 @@
 
 @media (max-width: 600px) {
 	.projects-container {
-		padding-top: 60px;
+		padding-top: 100px;
 	}
 
 	.projects-logo-container {
 		display: none;
+	}
+
+	.projects-subtitle {
+		margin-top: 10px;
 	}
 }
