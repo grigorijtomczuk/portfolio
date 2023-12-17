@@ -19,6 +19,11 @@ const Homepage = () => {
 	const [logoSize, setLogoSize] = useState(initialLogoSize);
 	const [stayLogo, setStayLogo] = useState(false);
 
+	// Scroll into top page view when switching nav tabs (in case the page is longer than 1 viewport hight)
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	useEffect(() => {
 		const handleScroll = () => {
 			setLogoSize(initialLogoSize - window.scrollY * 0.35);
@@ -88,7 +93,7 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-projects">
-							<AllProjects />
+							<AllProjects quantity={3} />
 						</div>
 
 						<div className="homepage-after-title">

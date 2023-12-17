@@ -8,6 +8,11 @@ import Socials from "@/components/about/socials";
 import { useEffect } from "react";
 
 const About = () => {
+	// Scroll into top page view when switching nav tabs (in case the page is longer than 1 viewport hight)
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	useEffect(() => {
 		document.title = `Обо мне ${INFO.main.titleSeparator} ${INFO.main.title}`;
 	}, []);
