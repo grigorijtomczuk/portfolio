@@ -1,6 +1,6 @@
-<div align=center>
+<!-- <div align=center>
 	<img src="./.github/images/" alt="" width="px">
-</div>
+</div> -->
 
 <h1 align=center>
 	Multipage Portfolio
@@ -17,7 +17,7 @@
 
 ## Features
 
-<img src="./.github/images/" alt="" width="px">
+<!-- <img src="./.github/images/" alt="" width="px"> -->
 
 - Slick design
 - Beautiful concept
