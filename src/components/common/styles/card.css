@@ -1,29 +1,30 @@
 @import "@/data/styles.css";
 
 .card {
-	mix-blend-mode: normal;
-	width: 400px;
+	height: 100%;
 	border-radius: 20px;
 	border: 2px solid var(--quaternary-color);
 }
 
 .card-container {
-	padding: 30px;
-	padding-bottom: 5px;
+	padding: 24px 30px;
 }
 
 .card-header {
 	display: flex;
 	align-items: center;
+	gap: 12px;
 }
 
 .card-icon {
+	width: 24px;
+	height: 24px;
+	text-align: center;
 	color: var(--tertiary-color);
 	font-size: 18px;
 }
 
 .card-title {
-	padding-left: 20px;
 	color: var(--secondary-color);
 	font-weight: var(--font-bold);
 	font-family: var(--secondary-font);
@@ -31,12 +32,5 @@
 }
 
 .card-body {
-	padding-top: 30px;
-}
-
-@media (max-width: 1280px) {
-	.card {
-		width: 95%;
-		margin: 0 auto;
-	}
+	margin-top: 24px;
 }

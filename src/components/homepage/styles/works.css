@@ -1,7 +1,7 @@
 @import "@/data/styles.css";
 
-.works-body {
-	margin-bottom: 10px;
+.works {
+	flex-basis: 40%;
 }
 
 .work {
@@ -9,7 +9,10 @@
 	display: grid;
 	align-items: center;
 	width: 100%;
-	padding-bottom: 20px;
+}
+
+.work + .work {
+	margin-top: 20px;
 }
 
 .work-image {

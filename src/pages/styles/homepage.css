@@ -77,15 +77,14 @@
 
 .homepage-after-title {
 	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	min-height: 200px;
 }
 
 .homepage-projects {
 	flex-basis: 300px;
 	margin-bottom: 32px;
-}
-
-.homepage-works {
-	flex-basis: 600px;
 }
 
 @media (hover: hover) {
@@ -141,10 +140,6 @@
 		flex-basis: auto;
 		margin-bottom: 0;
 		padding-top: 0;
-	}
-
-	.homepage-works {
-		flex-basis: auto;
 	}
 
 	.homepage-logo-container {

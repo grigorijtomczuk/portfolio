@@ -9,6 +9,7 @@ import Footer from "@/components/common/footer";
 import INFO from "@/data/user";
 import Logo from "@/components/common/logo";
 import NavBar from "@/components/common/navBar";
+import PlaceholderCard from "@/components/homepage/placeholderCard";
 import Works from "@/components/homepage/works";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { renderHtml } from "@/utils/utils";
@@ -97,9 +98,8 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-after-title">
-							<div className="homepage-works">
-								<Works />
-							</div>
+							<Works />
+							<PlaceholderCard />
 						</div>
 					</div>
 				</div>
