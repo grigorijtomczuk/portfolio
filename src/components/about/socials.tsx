@@ -36,23 +36,22 @@ const Socials = () => {
 				</a>
 			</div>
 
-			<div className="social">
-				<a href={INFO.socials.telegram} target="_blank" rel="noreferrer">
-					<div className="social-icon">
-						<FontAwesomeIcon icon={faTelegram} className="social-icon" />
-					</div>
-					<div className="social-text">Telegram</div>
-				</a>
-			</div>
+			<div className="divider-wrapper">
+				<div className="social">
+					<a href={INFO.socials.telegram} target="_blank" rel="noreferrer">
+						<div className="social-icon">
+							<FontAwesomeIcon icon={faTelegram} className="social-icon" />
+						</div>
+						<div className="social-text">Telegram</div>
+					</a>
+				</div>
 
-			<div className="social">
-				<div className="email-wrapper">
+				<div className="social">
 					<a href={`mailto:${INFO.main.email}`} rel="noreferrer">
 						<div className="social-icon">
-							<FontAwesomeIcon icon={faEnvelope} />
+							<FontAwesomeIcon icon={faEnvelope} className="social-icon" />
 						</div>
-
-						<div className="social-text">{INFO.main.email}</div>
+						<div className="social-text">Email</div>
 					</a>
 				</div>
 			</div>

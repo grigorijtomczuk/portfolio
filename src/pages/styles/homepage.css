@@ -66,10 +66,12 @@
 }
 
 .homepage-social-icon {
-	width: 30px;
-	margin-right: 10px;
+	opacity: 0.8;
+	width: 36px;
+	height: 36px;
 	color: var(--secondary-color);
-	font-size: 32px;
+	font-size: 30px;
+	text-align: center;
 	transition: color 0.3s ease;
 }
 
@@ -151,5 +153,11 @@
 
 	.homepage-socials {
 		margin-top: 25px;
+	}
+
+	.homepage-social-icon {
+		width: 32px;
+		height: 32px;
+		font-size: 24px;
 	}
 }

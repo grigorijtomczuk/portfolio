@@ -2,10 +2,15 @@
 
 html {
 	scrollbar-gutter: stable;
+	-webkit-text-size-adjust: 100%;
 }
 
 body {
 	margin: 0;
 	font-family: var(--primary-font);
 	background-color: var(--white);
+}
+
+svg {
+	vertical-align: middle !important;
 }

@@ -1,31 +1,37 @@
 @import "@/data/styles.css";
 
-.social,
-.email-wrapper {
-	padding-bottom: 15px;
+.social {
+	opacity: 0.8;
+	margin-bottom: 12px;
 }
 
-.social a,
-.email-wrapper a {
+.social a {
+	display: block;
+	height: 20px;
 	text-decoration: none;
 }
 
 .social-icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
 	color: var(--secondary-color);
-	font-size: 18px;
+	text-align: center;
 	transition: color 0.3s ease;
 }
 
 .social-text {
-	margin-top: -20px;
-	padding-left: 24px;
+	display: inline-block;
+	margin-left: 8px;
 	color: var(--secondary-color);
 	font-weight: var(--font-bold);
 	font-size: 16px;
+	line-height: 20px;
+	vertical-align: middle;
 	transition: color 0.3s ease;
 }
 
-.email-wrapper {
+.divider-wrapper {
 	position: relative;
 	padding-top: 12px;
 	border-top: 2px solid var(--quaternary-color);
@@ -39,7 +45,20 @@
 }
 
 @media (max-width: 1280px) {
-	.socials {
+	.socials,
+	.divider-wrapper {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: stretch;
 		width: 100%;
+	}
+
+	.social {
+		flex-basis: calc(100% / 2);
+	}
+
+	.divider-wrapper {
+		border-top: 0;
 	}
 }
