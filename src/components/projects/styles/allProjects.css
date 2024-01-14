@@ -8,9 +8,8 @@
 }
 
 .all-projects-project {
-	flex-basis: calc((100% / 3) - 8px);
+	flex-basis: calc(100% / 3);
 	box-sizing: border-box;
-	margin: 4px;
 	overflow: hidden;
 }
 
