@@ -56,15 +56,4 @@
 	.footer-nav-link-list {
 		display: none;
 	}
-
-	/* .footer-nav-link-list {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		width: 100%;
-	}
-
-	.footer-nav-link-item {
-		padding-bottom: 12px;
-	} */
 }

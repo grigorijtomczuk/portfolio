@@ -62,6 +62,7 @@
 	display: flex;
 	justify-content: left;
 	align-items: center;
+	margin-bottom: 32px;
 }
 
 .homepage-social-icon {
@@ -78,12 +79,11 @@
 
 .homepage-projects {
 	flex-basis: 300px;
-	padding-top: 40px;
+	margin-bottom: 32px;
 }
 
 .homepage-works {
 	flex-basis: 600px;
-	margin-top: 30px;
 }
 
 @media (hover: hover) {
@@ -137,6 +137,7 @@
 
 	.homepage-projects {
 		flex-basis: auto;
+		margin-bottom: 0;
 		padding-top: 0;
 	}
 
