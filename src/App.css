@@ -117,9 +117,8 @@
 	}
 
 	.content-wrapper {
-		max-width: 90%;
-		padding-right: 10%;
-		padding-left: 10%;
+		max-width: 85%;
+		margin: 0 auto;
 	}
 
 	.page-content:before,
@@ -127,27 +126,9 @@
 		width: calc((100% - 950px) / 2);
 	}
 
-	.content-wrapper {
-		max-width: 980px;
-	}
-
-	.content-wrapper {
-		max-width: 90%;
-		margin: 0 auto;
-		padding: 0 10px;
-	}
-
 	.page-content:before,
 	.page-content:after {
 		display: none;
-	}
-
-	.title {
-		width: 100%;
-	}
-
-	.subtitle {
-		width: 100%;
 	}
 
 	.page-footer {
@@ -155,10 +136,12 @@
 	}
 
 	.title {
-		font-size: 32px;
+		width: 100%;
+		font-size: 28px;
 	}
 
 	.subtitle {
+		width: 100%;
 		font-size: 16px;
 	}
 }
