@@ -90,7 +90,7 @@
 
 .code-span {
 	padding: 2px 8px;
-	border-radius: 8px;
+	border-radius: 10px;
 	font-family: var(--monospaced-font);
 	background-color: var(--quaternary-color);
 }
