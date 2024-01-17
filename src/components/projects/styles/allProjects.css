@@ -13,6 +13,16 @@
 }
 
 @media (max-width: 1280px) {
+	.all-projects-container {
+		margin-bottom: 32px;
+	}
+
+	.all-projects-project {
+		flex-basis: 50%;
+	}
+}
+
+@media (max-width: 768px) {
 	.all-projects-project {
 		flex-basis: 100%;
 	}

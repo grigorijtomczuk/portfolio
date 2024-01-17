@@ -132,10 +132,6 @@
 		margin-bottom: 25px;
 	}
 
-	.homepage-after-title {
-		flex-direction: column;
-	}
-
 	.homepage-projects {
 		flex-basis: auto;
 		margin-bottom: 0;
@@ -154,5 +150,11 @@
 		width: 32px;
 		height: 32px;
 		font-size: 24px;
+	}
+}
+
+@media (max-width: 768px) {
+	.homepage-after-title {
+		flex-direction: column;
 	}
 }

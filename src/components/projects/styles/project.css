@@ -1,7 +1,6 @@
 @import "@/data/styles.css";
 
 .project {
-	mix-blend-mode: normal;
 	opacity: 0.8;
 	height: 100%;
 	border-radius: 20px;
@@ -72,10 +71,21 @@
 
 @media (max-width: 1280px) {
 	.project-container {
+		display: block;
+		min-height: 0;
+	}
+
+	.project-link {
+		margin-top: 16px;
+	}
+}
+
+@media (max-width: 768px) {
+	.project-container {
+		display: block;
 		min-height: 0;
 		margin-bottom: 32px;
 		padding: 0;
-		display: block;
 	}
 
 	.project-logo {
