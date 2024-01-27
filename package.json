@@ -2,7 +2,7 @@
 	"name": "multipage-portfolio",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "multipage-portfolio",
+	"homepage": "portfolio",
 	"scripts": {
 		"build": "craco build",
 		"predeploy": "npm run build",
