@@ -88,6 +88,13 @@
 	transition: color 0.3s ease;
 }
 
+.alternative-link {
+	color: var(--secondary-color);
+	font-weight: var(--font-bold);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
 .code-span {
 	padding: 2px 8px;
 	border-radius: 10px;
@@ -102,6 +109,10 @@
 
 	.general-link:hover {
 		color: var(--link-hover-color);
+	}
+
+	.alternative-link:hover {
+		color: var(--link-color);
 	}
 
 	/* Put it in here so it works only on desktop */

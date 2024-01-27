@@ -1,6 +1,9 @@
 import "@/components/common/styles/footer.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
+import packageJson from "@/../package.json";
 
 const Footer = () => {
 	return (
@@ -25,10 +28,10 @@ const Footer = () => {
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-						Copyright &copy; {new Date().getFullYear()}{" "}
-						<Link className="general-link" to={"https://github.com/grigorijtomczuk"} target="_blank">
-							grigorijtomczuk
-						</Link>
+						<Link className="alternative-link" to={"https://github.com/grigorijtomczuk/portfolio"} target="_blank">
+							<FontAwesomeIcon icon={faCodeBranch} /> v{packageJson.version}
+						</Link>{" "}
+						&copy; {new Date().getFullYear()} grigorijtomczuk
 					</div>
 				</div>
 			</div>

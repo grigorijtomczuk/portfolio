@@ -3,7 +3,7 @@
 </div> -->
 
 <h1 align=center>
-	Multipage Portfolio
+	Portfolio
 </h1>
 
 <p align=center>
