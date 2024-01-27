@@ -1,11 +1,20 @@
 import AboutImage from "@/assets/images/about.jpg";
 import HomepageImage from "@/assets/images/homepage.jpg";
 import Logo from "@/assets/images/logo.jpg";
+import SchoolLogo from "@/assets/images/school.jpg";
+import SuaiLogo from "@/assets/images/suai.svg";
+
+interface IWorkItem {
+	image: any;
+	title: string;
+	subtitle: string;
+	duration: string;
+}
 
 class INFO {
 	main: { title: string; titleSeparator: string; name: string; email: string; logo: any };
 	socials: { github: string; linkedin: string; stackoverflow: string; telegram: string };
-	homepage: { title: string; description: string; image: any };
+	homepage: { title: string; description: string; image: any; works: IWorkItem[]; downloads: string };
 	about: { title: string; description: string; image: any };
 	projects: { title: string; description: string; projectsList: { title: string; description: string; logo: string; linkText: string; link: string }[] };
 	contact: { title: string; description: string };
@@ -30,6 +39,21 @@ class INFO {
 			title: "Просто студент и хороший человек.",
 			description: `У Вас имеются претензии к заголовку? Вы не согласны? Тогда прошу написать мне на <a class="general-link" href="mailto:${this.main.email}">почту</a>. В любом случае, спасибо что зашли на этот сайт! Здесь вы можете узнать обо мне, о моей деятельности и о способах связаться со мной.`,
 			image: HomepageImage,
+			works: [
+				{
+					image: SchoolLogo,
+					title: "Школа №212",
+					subtitle: "Ученик",
+					duration: "2016 – 2023",
+				},
+				{
+					image: SuaiLogo,
+					title: "ГУАП",
+					subtitle: "Студент",
+					duration: "2023 – Сегодня",
+				},
+			],
+			downloads: "Возможно здесь будет мое резюме, но пока его нет :)",
 		};
 
 		this.about = {
@@ -107,4 +131,5 @@ class INFO {
 		};
 	}
 }
+
 export default new INFO();
