@@ -4,12 +4,12 @@ import React, { useEffect, useState } from "react";
 import { faGithub, faLinkedin, faStackOverflow, faTelegram } from "@fortawesome/free-brands-svg-icons";
 
 import AllProjects from "@/components/projects/allProjects";
+import Downloads from "@/components/homepage/downloads";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "@/components/common/footer";
 import INFO from "@/data/user";
 import Logo from "@/components/common/logo";
 import NavBar from "@/components/common/navBar";
-import PlaceholderCard from "@/components/homepage/placeholderCard";
 import Works from "@/components/homepage/works";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { renderHtml } from "@/utils/utils";
@@ -99,7 +99,7 @@ const Homepage = () => {
 
 						<div className="homepage-after-title">
 							<Works />
-							<PlaceholderCard />
+							<Downloads />
 						</div>
 					</div>
 				</div>
