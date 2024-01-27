@@ -89,7 +89,7 @@ class INFO {
 					description: "Проект этого сайта, мое портфолио. Здесь я публикую основную информацию о моей деятельности.",
 					logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png",
 					linkText: "Исходный код",
-					link: "https://github.com/grigorijtomczuk/multipage-portfolio",
+					link: "https://github.com/grigorijtomczuk/portfolio",
 				},
 				{
 					title: "Simple Form",
