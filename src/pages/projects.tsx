@@ -2,9 +2,9 @@ import "@/pages/styles/projects.css";
 
 import AllProjects from "@/components/projects/allProjects";
 import Footer from "@/components/common/footer";
-import INFO from "@/data/user";
 import Logo from "@/components/common/logo";
 import NavBar from "@/components/common/navBar";
+import info from "@/data/user";
 import { renderHtml } from "@/utils/utils";
 import { useEffect } from "react";
 
@@ -15,7 +15,7 @@ const Projects = () => {
 	}, []);
 
 	useEffect(() => {
-		document.title = `Проекты ${INFO.main.titleSeparator} ${INFO.main.title}`;
+		document.title = `Проекты ${info.main.titleSeparator} ${info.main.title}`;
 	}, []);
 
 	return (
@@ -29,9 +29,9 @@ const Projects = () => {
 						</div>
 					</div>
 					<div className="projects-container">
-						<div className="title projects-title">{INFO.projects.title}</div>
+						<div className="title projects-title">{info.projects.title}</div>
 
-						<div className="subtitle projects-subtitle">{renderHtml(INFO.projects.description)}</div>
+						<div className="subtitle projects-subtitle">{renderHtml(info.projects.description)}</div>
 
 						<div className="projects-list">
 							<AllProjects />

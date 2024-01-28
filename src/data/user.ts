@@ -3,21 +3,15 @@ import HomepageImage from "@/assets/images/homepage.jpg";
 import Logo from "@/assets/images/logo.jpg";
 import SchoolLogo from "@/assets/images/school.jpg";
 import SuaiLogo from "@/assets/images/suai.svg";
+import type { UserData } from "types/types";
 
-interface IWorkItem {
-	image: any;
-	title: string;
-	subtitle: string;
-	duration: string;
-}
-
-class INFO {
-	main: { title: string; titleSeparator: string; name: string; email: string; logo: any };
-	socials: { github: string; linkedin: string; stackoverflow: string; telegram: string };
-	homepage: { title: string; description: string; image: any; works: IWorkItem[]; downloads: string };
-	about: { title: string; description: string; image: any };
-	projects: { title: string; description: string; projectsList: { title: string; description: string; logo: string; linkText: string; link: string }[] };
-	contact: { title: string; description: string };
+class Info implements UserData {
+	main;
+	socials;
+	homepage;
+	about;
+	projects;
+	contact;
 
 	constructor() {
 		this.main = {
@@ -69,56 +63,56 @@ class INFO {
 				{
 					title: "Backend API TypeScript",
 					description: "Базовый RESTful API с аутентификацией, написанный на Node, Express, TypeScript и MongoDB.",
-					logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png",
+					logos: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png", "https://www.cdnlogo.com/logos/m/30/mongodb-icon.svg"],
 					linkText: "Исходный код",
 					link: "https://github.com/grigorijtomczuk/backend-api-ts",
 				},
 				{
 					title: "Pig Website",
 					description: "Вебсайт, который я разрабатываю веселья ради вместе с моей девушкой, одновременно практикуясь в веб-разработке. ",
-					logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+					logos: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png", "https://www.cdnlogo.com/logos/r/63/react.svg"],
 					linkText: "Онлайн развертка",
 					link: "https://grigorijtomczuk.github.io/pig-website",
 				},
 				{
 					title: "Floppa The Bird",
 					description: "Простая 2D игра на Unity по типу Flappy Bird про птичку, которую зовут Флопа. Музыка и все спрайты авторские.",
-					logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/csharp/csharp.png",
+					logos: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/csharp/csharp.png", "https://www.cdnlogo.com/logos/u/20/unity.svg"],
 					linkText: "Исходный код",
 					link: "https://github.com/grigorijtomczuk/floppa-the-bird",
 				},
 				{
 					title: "Strawberrette The Pig",
 					description: "Телеграм бот-свинья, который имеет некоторую практическую и эстетическую ценность.",
-					logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+					logos: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png"],
 					linkText: "Исходный код",
 					link: "https://github.com/grigorijtomczuk/strawberrette-pig",
 				},
 				{
 					title: "TODO React TypeScript",
 					description: "Простое TODO приложение, написанное на Vite React в связке с TypeScript.",
-					logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png",
+					logos: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png", "https://www.cdnlogo.com/logos/r/63/react.svg"],
 					linkText: "Исходный код",
 					link: "https://github.com/grigorijtomczuk/todo-react-ts",
 				},
 				{
 					title: "Goofy Pet Feeder",
 					description: `Проект моей курсовой работы 2021-2022 учебного года, когда я отучился один курс в колледже по специальности "Мехатроника".`,
-					logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/cpp/cpp.png",
+					logos: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/cpp/cpp.png", "https://www.cdnlogo.com/logos/a/17/arduino.svg"],
 					linkText: "Исходный код",
 					link: "https://github.com/grigorijtomczuk/goofy-pet-feeder",
 				},
 				{
-					title: "Multipage Portfolio",
+					title: "Portfolio",
 					description: "Проект этого сайта, мое портфолио. Здесь я публикую основную информацию о моей деятельности.",
-					logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png",
+					logos: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png", "https://www.cdnlogo.com/logos/r/63/react.svg"],
 					linkText: "Исходный код",
 					link: "https://github.com/grigorijtomczuk/portfolio",
 				},
 				{
 					title: "Simple Form",
 					description: "По-щегольски изысканая форма с кастомными стилями, сверстанная на plain HTML и CSS.",
-					logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
+					logos: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png"],
 					linkText: "Исходный код",
 					link: "https://github.com/grigorijtomczuk/simple-form",
 				},
@@ -132,4 +126,4 @@ class INFO {
 	}
 }
 
-export default new INFO();
+export default new Info();

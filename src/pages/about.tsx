@@ -1,10 +1,10 @@
 import "@/pages/styles/about.css";
 
 import Footer from "@/components/common/footer";
-import INFO from "@/data/user";
 import Logo from "@/components/common/logo";
 import NavBar from "@/components/common/navBar";
 import Socials from "@/components/about/socials";
+import info from "@/data/user";
 import { renderHtml } from "@/utils/utils";
 import { useEffect } from "react";
 
@@ -15,7 +15,7 @@ const About = () => {
 	}, []);
 
 	useEffect(() => {
-		document.title = `Обо мне ${INFO.main.titleSeparator} ${INFO.main.title}`;
+		document.title = `Обо мне ${info.main.titleSeparator} ${info.main.title}`;
 	}, []);
 
 	return (
@@ -32,13 +32,13 @@ const About = () => {
 					<div className="about-container">
 						<div className="about-main">
 							<div className="about-left-side">
-								<div className="title about-title">{INFO.about.title}</div>
-								<div className="subtitle about-subtitle">{renderHtml(INFO.about.description)}</div>
+								<div className="title about-title">{info.about.title}</div>
+								<div className="subtitle about-subtitle">{renderHtml(info.about.description)}</div>
 							</div>
 
 							<div className="about-right-side">
 								<div className="about-image-container">
-									<img className="about-image" src={INFO.about.image} alt="about" draggable="false" />
+									<img className="about-image" src={info.about.image} alt="about" draggable="false" />
 								</div>
 
 								<div className="about-socials">

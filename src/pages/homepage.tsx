@@ -7,11 +7,11 @@ import AllProjects from "@/components/projects/allProjects";
 import Downloads from "@/components/homepage/downloads";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "@/components/common/footer";
-import INFO from "@/data/user";
 import Logo from "@/components/common/logo";
 import NavBar from "@/components/common/navBar";
 import Works from "@/components/homepage/works";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import info from "@/data/user";
 import { renderHtml } from "@/utils/utils";
 
 const Homepage = () => {
@@ -47,7 +47,7 @@ const Homepage = () => {
 	} as React.CSSProperties;
 
 	useEffect(() => {
-		document.title = INFO.main.title;
+		document.title = info.main.title;
 	}, []);
 
 	return (
@@ -65,30 +65,30 @@ const Homepage = () => {
 					<div className="homepage-container">
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
-								<div className="title homepage-title">{INFO.homepage.title}</div>
-								<div className="subtitle homepage-subtitle">{renderHtml(INFO.homepage.description)}</div>
+								<div className="title homepage-title">{info.homepage.title}</div>
+								<div className="subtitle homepage-subtitle">{renderHtml(info.homepage.description)}</div>
 							</div>
 							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
-									<img className="homepage-image" src={INFO.homepage.image} alt="about" draggable="false" />
+									<img className="homepage-image" src={info.homepage.image} alt="about" draggable="false" />
 								</div>
 							</div>
 						</div>
 
 						<div className="homepage-socials">
-							<a className="homepage-social-icon" href={INFO.socials.github} target="_blank" rel="noreferrer">
+							<a className="homepage-social-icon" href={info.socials.github} target="_blank" rel="noreferrer">
 								<FontAwesomeIcon icon={faGithub} />
 							</a>
-							<a className="homepage-social-icon" href={INFO.socials.linkedin} target="_blank" rel="noreferrer">
+							<a className="homepage-social-icon" href={info.socials.linkedin} target="_blank" rel="noreferrer">
 								<FontAwesomeIcon icon={faLinkedin} />
 							</a>
-							<a className="homepage-social-icon" href={INFO.socials.stackoverflow} target="_blank" rel="noreferrer">
+							<a className="homepage-social-icon" href={info.socials.stackoverflow} target="_blank" rel="noreferrer">
 								<FontAwesomeIcon icon={faStackOverflow} />
 							</a>
-							<a className="homepage-social-icon" href={INFO.socials.telegram} target="_blank" rel="noreferrer">
+							<a className="homepage-social-icon" href={info.socials.telegram} target="_blank" rel="noreferrer">
 								<FontAwesomeIcon icon={faTelegram} />
 							</a>
-							<a className="homepage-social-icon" href={`mailto:${INFO.main.email}`} rel="noreferrer">
+							<a className="homepage-social-icon" href={`mailto:${info.main.email}`} rel="noreferrer">
 								<FontAwesomeIcon icon={faEnvelope} />
 							</a>
 						</div>

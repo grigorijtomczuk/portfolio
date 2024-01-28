@@ -1,10 +1,10 @@
 import "@/components/homepage/styles/works.css";
 
 import Card from "@/components/common/card";
-import INFO from "@/data/user";
 import SchoolLogo from "@/assets/images/school.jpg";
 import SuaiLogo from "@/assets/images/suai.svg";
 import { faHourglassHalf } from "@fortawesome/free-solid-svg-icons";
+import info from "@/data/user";
 
 const Works = () => {
 	return (
@@ -14,9 +14,9 @@ const Works = () => {
 				title="Таймлайн"
 				body={
 					<div className="works-body">
-						{INFO.homepage.works.map((work) => {
+						{info.homepage.works.map((work, key) => {
 							return (
-								<div className="work">
+								<div className="work" key={key}>
 									<img className="work-image" src={work.image} alt="" draggable="false" />
 									<div className="work-title">{work.title}</div>
 									<div className="work-subtitle">{work.subtitle}</div>

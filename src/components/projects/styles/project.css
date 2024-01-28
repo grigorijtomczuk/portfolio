@@ -20,12 +20,18 @@
 }
 
 .project-logo {
-	width: 32px;
-	height: 32px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.project-logo + .project-logo {
+	margin-left: 8px;
 }
 
 .project-logo img {
-	width: 100%;
+	display: block;
+	width: 32px;
+	height: 32px;
 }
 
 .project-title {
@@ -88,19 +94,18 @@
 		padding: 0;
 	}
 
-	.project-logo {
-		display: inline-block;
+	.project-logos {
+		margin-bottom: 8px;
+	}
+
+	.project-logo img {
 		width: 24px;
 		height: 24px;
-		vertical-align: middle;
 	}
 
 	.project-title {
-		display: inline-block;
 		margin: 0;
-		margin-left: 8px;
 		line-height: 24px;
-		vertical-align: middle;
 	}
 
 	.project-description {

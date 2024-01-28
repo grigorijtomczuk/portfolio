@@ -1,7 +1,7 @@
 import "@/components/common/styles/logo.css";
 
-import INFO from "@/data/user";
 import { Link } from "react-router-dom";
+import info from "@/data/user";
 
 const Logo = (props: { width: any; link?: any }) => {
 	let { width, link } = props;
@@ -10,7 +10,7 @@ const Logo = (props: { width: any; link?: any }) => {
 		link = true;
 	}
 
-	const imageElement = <img className="logo" src={INFO.main.logo} alt="logo" width={width} draggable="false" />;
+	const imageElement = <img className="logo" src={info.main.logo} alt="logo" width={width} draggable="false" />;
 
 	return (
 		<>
