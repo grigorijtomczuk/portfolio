@@ -1,0 +1,19 @@
+{
+	"hooks": {
+		"before:release": ["npm run deploy"]
+	},
+	"git": {
+		"commitMessage": "Chore: release v${version}",
+		"tagName": "v${version}",
+		"requireCleanWorkingDir": false
+	},
+	"github": {
+		"release": true,
+		"releaseName": "v${version}",
+		"autoGenerate": true
+	},
+	"npm": {
+		"publish": false,
+		"ignoreVersion": true
+	}
+}
