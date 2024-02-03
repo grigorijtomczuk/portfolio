@@ -96,8 +96,9 @@
 }
 
 .code-span {
-	padding: 2px 8px;
-	border-radius: 10px;
+	padding: 2px 6px;
+	border-radius: 8px;
+	font-size: 15px;
 	font-family: var(--monospaced-font);
 	background-color: var(--quaternary-color);
 }
