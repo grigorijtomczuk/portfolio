@@ -10,7 +10,3 @@ body {
 	font-family: var(--primary-font);
 	background-color: var(--white);
 }
-
-svg {
-	vertical-align: middle !important;
-}
