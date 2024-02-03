@@ -2,8 +2,8 @@
 
 .card {
 	height: 100%;
-	border-radius: 20px;
 	border: 2px solid var(--quaternary-color);
+	border-radius: 20px;
 }
 
 .card-container {
@@ -11,24 +11,28 @@
 }
 
 .card-header {
+	gap: 12px;
 	display: flex;
 	align-items: center;
-	gap: 12px;
 }
 
 .card-icon {
 	width: 24px;
 	height: 24px;
-	text-align: center;
 	color: var(--tertiary-color);
+	text-align: center;
+}
+
+.card-icon svg {
 	font-size: 18px;
+	vertical-align: middle;
 }
 
 .card-title {
 	color: var(--secondary-color);
 	font-weight: var(--font-bold);
-	font-family: var(--secondary-font);
 	font-size: 18px;
+	font-family: var(--secondary-font);
 }
 
 .card-body {
