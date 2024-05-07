@@ -5,14 +5,14 @@
 }
 
 .contact-logo {
-	backdrop-filter: blur(4px);
 	display: flex;
-	z-index: 999;
 	position: fixed;
 	top: 3vh;
+	z-index: 999;
+	backdrop-filter: blur(4px);
+	box-shadow: var(--box-shadow);
 	border: 4px solid var(--transparent-white);
 	border-radius: 50%;
-	box-shadow: var(--box-shadow);
 }
 
 .contact-main {
@@ -45,7 +45,7 @@
 @media (max-width: 1280px) {
 	.contact-main {
 		flex-direction: column;
-		padding-top: 100px;
+		padding-top: 50px;
 	}
 
 	.contact-logo-container {

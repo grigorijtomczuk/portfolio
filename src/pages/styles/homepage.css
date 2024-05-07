@@ -4,17 +4,17 @@
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	height: 80px;
 	padding-top: 130px;
+	height: 80px;
 }
 
 .homepage-logo {
-	backdrop-filter: blur(4px);
 	display: flex;
 	z-index: 999;
+	backdrop-filter: blur(4px);
+	box-shadow: var(--box-shadow);
 	border: 4px solid var(--transparent-white);
 	border-radius: 50%;
-	box-shadow: var(--box-shadow);
 }
 
 .homepage-container {
@@ -52,10 +52,10 @@
 }
 
 .homepage-image {
-	max-width: 100%;
-	border-radius: 10%;
-	box-shadow: var(--box-shadow);
 	transform: rotate(3deg);
+	box-shadow: var(--box-shadow);
+	border-radius: 10%;
+	max-width: 100%;
 }
 
 .homepage-socials {
@@ -67,12 +67,12 @@
 
 .homepage-social-icon {
 	opacity: 0.8;
+	transition: color 0.3s ease;
 	width: 36px;
 	height: 36px;
 	color: var(--secondary-color);
 	font-size: 30px;
 	text-align: center;
-	transition: color 0.3s ease;
 }
 
 .homepage-after-title {
@@ -94,6 +94,10 @@
 }
 
 @media (max-width: 1280px) {
+	.homepage-container {
+		padding-top: 0;
+	}
+
 	.homepage-first-area {
 		flex-direction: column;
 	}
@@ -108,14 +112,14 @@
 
 	.homepage-title {
 		order: 2;
-		width: 100% !important;
 		margin-top: 20px;
+		width: 100% !important;
 	}
 
 	.homepage-subtitle {
 		order: 3;
-		width: 100% !important;
 		margin-top: 10px;
+		width: 100% !important;
 	}
 
 	.homepage-first-area-right-side {
@@ -126,10 +130,10 @@
 
 	.homepage-image-container {
 		order: 1;
-		width: 280px;
-		height: 280px;
 		margin-top: 75px;
 		margin-bottom: 25px;
+		width: 280px;
+		height: 280px;
 	}
 
 	.homepage-projects {

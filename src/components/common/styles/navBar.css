@@ -54,6 +54,11 @@
 }
 
 @media (max-width: 1280px) {
+	.navbar {
+		top: auto;
+		bottom: 3vh;
+	}
+
 	.nav-list {
 		padding: 0 16px;
 		min-width: 35%;
