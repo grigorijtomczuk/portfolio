@@ -1,7 +1,7 @@
 @import "@/data/styles.css";
 
 .downloads {
-	flex-basis: 60%;
+	flex-basis: 50%;
 }
 
 .downloads-body {

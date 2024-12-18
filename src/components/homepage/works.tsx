@@ -1,8 +1,6 @@
 import "@/components/homepage/styles/works.css";
 
 import Card from "@/components/common/card";
-import SchoolLogo from "@/assets/images/school.jpg";
-import SuaiLogo from "@/assets/images/suai.svg";
 import { faHourglassHalf } from "@fortawesome/free-solid-svg-icons";
 import info from "@/data/user";
 

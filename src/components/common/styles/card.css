@@ -1,9 +1,9 @@
 @import "@/data/styles.css";
 
 .card {
-	height: 100%;
 	border: 2px solid var(--quaternary-color);
 	border-radius: 20px;
+	height: 100%;
 }
 
 .card-container {
@@ -11,9 +11,9 @@
 }
 
 .card-header {
-	gap: 12px;
 	display: flex;
 	align-items: center;
+	gap: 12px;
 }
 
 .card-icon {
@@ -24,8 +24,8 @@
 }
 
 .card-icon svg {
-	font-size: 18px;
 	vertical-align: middle;
+	font-size: 18px;
 }
 
 .card-title {
@@ -37,4 +37,10 @@
 
 .card-body {
 	margin-top: 24px;
+}
+
+@media (max-width: 1280px) {
+	.card-container {
+		padding: 18px 24px;
+	}
 }
