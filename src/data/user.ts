@@ -43,7 +43,7 @@ class Info implements UserData {
 				{
 					image: EmsLogo,
 					title: "SUAI Embedded Systems Lab.",
-					subtitle: "Веб-разработичк",
+					subtitle: "Веб-разработчик",
 					duration: "2024 – Сегодня",
 				},
 			],
