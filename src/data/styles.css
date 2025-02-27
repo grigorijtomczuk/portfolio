@@ -20,5 +20,19 @@
 	--font-light: 100;
 	/* --------------------- */
 
-	--box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	--box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	--box-shadow-strong: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.darkmode {
+	--primary-color: #f8f8f8;
+	--secondary-color: #b4b4b8;
+	--tertiary-color: #6c6c75;
+	--quaternary-color: #49494e;
+	--link-color: #407cdb;
+	--link-hover-color: #2f5fb8;
+	/* fix wrong var names */
+	--white: #363639;
+	--transparent-white: #27272ae3;
+	--light-gray: #3d3d40;
 }

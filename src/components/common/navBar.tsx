@@ -1,8 +1,9 @@
 import "@/components/common/styles/navBar.css";
 
 import { Link } from "react-router-dom";
+import ThemeSwitchButton from "@/components/common/themeSwitchButton";
 
-const NavBar = (props: { active?: any }) => {
+const NavBar = (props: { active?: string }) => {
 	const { active } = props;
 
 	return (
@@ -23,6 +24,10 @@ const NavBar = (props: { active?: any }) => {
 							<Link to="/contact">Контакты</Link>
 						</li>
 					</ul>
+					{/* TODO: add mobile theme switch button */}
+					<div className="theme-switch-container">
+						<ThemeSwitchButton />
+					</div>
 				</nav>
 			</div>
 		</>
