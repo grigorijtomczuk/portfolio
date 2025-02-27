@@ -12,23 +12,28 @@
 	aspect-ratio: 1;
 	width: 48px;
 	height: auto;
-	color: var(--secondary-color);
 
 	@media (hover: hover) {
 		&:hover {
-			color: var(--link-color);
+			& svg {
+				fill: var(--link-color);
+			}
 		}
 	}
 
 	&:active {
 		transform: scale(0.9);
 		box-shadow: var(--box-shadow-strong);
-		color: var(--secondary-color);
+		& svg {
+			fill: var(--secondary-color);
+		}
 	}
 
 	& svg {
+		transition: all 200ms;
 		width: 24px;
 		height: 24px;
+		fill: var(--secondary-color);
 
 		&:last-child {
 			display: none;

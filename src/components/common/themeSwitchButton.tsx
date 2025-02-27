@@ -2,7 +2,9 @@ import "@/components/common/styles/themeSwitchButton.css";
 
 import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
 
+import { ReactComponent as DarkModeIcon } from "@/assets/icons/dark-mode.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ReactComponent as LightModeIcon } from "@/assets/icons/light-mode.svg";
 import { useRef } from "react";
 
 const themeSwitchButton = () => {
@@ -62,8 +64,8 @@ const themeSwitchButton = () => {
 
 	return (
 		<button ref={button} id="theme-switch" onClick={onThemeSwitchButtonClick}>
-			<FontAwesomeIcon icon={faMoon} />
-			<FontAwesomeIcon icon={faSun} />
+			<DarkModeIcon />
+			<LightModeIcon />
 		</button>
 	);
 };
