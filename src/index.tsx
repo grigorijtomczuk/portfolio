@@ -13,7 +13,12 @@ const root = createRoot(document.getElementById("root")!);
 
 root.render(
 	<StrictMode>
-		<HashRouter>
+		<HashRouter
+			future={{
+				v7_relativeSplatPath: true,
+				v7_startTransition: true,
+			}}
+		>
 			<App />
 		</HashRouter>
 	</StrictMode>
