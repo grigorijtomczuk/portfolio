@@ -49,8 +49,8 @@
 }
 
 .about-image {
+	mask-image: url(@/assets/icons/squircle.svg);
 	box-shadow: var(--box-shadow);
-	border-radius: 10%;
 	max-width: 100%;
 }
 
