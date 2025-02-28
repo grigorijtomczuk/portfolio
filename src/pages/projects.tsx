@@ -22,7 +22,6 @@ const Projects = () => {
 		<>
 			<div className="page-content">
 				<div className="content-wrapper">
-					<NavBar active="projects" />
 					<div className="projects-logo-container">
 						<div className="projects-logo">
 							<Logo width={40} />

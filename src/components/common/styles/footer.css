@@ -25,13 +25,7 @@
 }
 
 .footer-nav-link-item {
-	font-weight: var(--font-bold);
 	font-size: 14px;
-}
-
-.footer-nav-link-list a {
-	color: var(--secondary-color);
-	text-decoration: none;
 }
 
 .footer-credits-text {

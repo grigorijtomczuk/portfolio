@@ -54,8 +54,6 @@ const Homepage = () => {
 		<>
 			<div className="page-content">
 				<div className="content-wrapper">
-					<NavBar active="home" />
-
 					<div className="homepage-logo-container">
 						<div className="homepage-logo" style={logoStyle}>
 							<Logo width={logoSize} link={false} />
@@ -66,26 +64,53 @@ const Homepage = () => {
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
 								<div className="title homepage-title">{info.homepage.title}</div>
-								<div className="subtitle homepage-subtitle">{renderHtml(info.homepage.description)}</div>
+								<div className="subtitle homepage-subtitle">
+									{renderHtml(info.homepage.description)}
+								</div>
 							</div>
 							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
-									<img className="homepage-image" src={info.homepage.image} alt="about" draggable="false" />
+									<img
+										className="homepage-image"
+										src={info.homepage.image}
+										alt="about"
+										draggable="false"
+									/>
 								</div>
 							</div>
 						</div>
 
 						<div className="homepage-socials">
-							<a className="homepage-social-icon" href={info.socials.github} target="_blank" rel="noreferrer">
+							<a
+								className="homepage-social-icon"
+								href={info.socials.github}
+								target="_blank"
+								rel="noreferrer"
+							>
 								<FontAwesomeIcon icon={faGithub} />
 							</a>
-							<a className="homepage-social-icon" href={info.socials.linkedin} target="_blank" rel="noreferrer">
+							<a
+								className="homepage-social-icon"
+								href={info.socials.linkedin}
+								target="_blank"
+								rel="noreferrer"
+							>
 								<FontAwesomeIcon icon={faLinkedin} />
 							</a>
-							<a className="homepage-social-icon" href={info.socials.stackoverflow} target="_blank" rel="noreferrer">
+							<a
+								className="homepage-social-icon"
+								href={info.socials.stackoverflow}
+								target="_blank"
+								rel="noreferrer"
+							>
 								<FontAwesomeIcon icon={faStackOverflow} />
 							</a>
-							<a className="homepage-social-icon" href={info.socials.telegram} target="_blank" rel="noreferrer">
+							<a
+								className="homepage-social-icon"
+								href={info.socials.telegram}
+								target="_blank"
+								rel="noreferrer"
+							>
 								<FontAwesomeIcon icon={faTelegram} />
 							</a>
 							<a className="homepage-social-icon" href={`mailto:${info.main.email}`} rel="noreferrer">

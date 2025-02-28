@@ -32,12 +32,49 @@
 }
 
 .nav-item {
+	position: relative;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	width: auto;
 	font-weight: var(--font-bold);
 	font-size: 14px;
-}
 
-.nav-item.active a {
-	color: var(--link-color) !important;
+	.nav-item-icon {
+		transform: translateX(-6px);
+		opacity: 0;
+		transition: all 0.3s ease;
+		width: 0;
+		overflow: hidden !important;
+		color: var(--primary-color);
+
+		@media (max-width: 1280px) {
+			display: none;
+		}
+	}
+
+	&.active {
+		a,
+		.nav-item-icon {
+			color: var(--link-color);
+		}
+
+		.nav-item-icon {
+			opacity: 1;
+			width: 16px;
+		}
+	}
+
+	@media (hover: hover) {
+		&:hover a,
+		&:hover .nav-item-icon {
+			color: var(--link-color);
+		}
+
+		&:hover .nav-item-icon {
+			opacity: 1;
+			width: 16px;
+		}
+	}
 }
 
 .nav-item a {
@@ -51,12 +88,6 @@
 	position: absolute;
 	top: 0; /* fix unaligned logo and this button with navbar */
 	right: 0;
-}
-
-@media (hover: hover) {
-	.nav-item a:hover {
-		color: var(--link-color);
-	}
 }
 
 @media (max-width: 1280px) {

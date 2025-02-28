@@ -12,23 +12,35 @@ const Footer = () => {
 				<div className="footer-links">
 					<ul className="footer-nav-link-list">
 						<li className="footer-nav-link-item">
-							<Link to="/">Главная</Link>
+							<Link className="alternative-link" to="/">
+								Главная
+							</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/about">Обо мне</Link>
+							<Link className="alternative-link" to="/about">
+								Обо мне
+							</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/projects">Проекты</Link>
+							<Link className="alternative-link" to="/projects">
+								Проекты
+							</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/contact">Связаться</Link>
+							<Link className="alternative-link" to="/contact">
+								Контакты
+							</Link>
 						</li>
 					</ul>
 				</div>
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-						<Link className="alternative-link" to={"https://github.com/grigorijtomczuk/portfolio"} target="_blank">
+						<Link
+							className="alternative-link"
+							to={"https://github.com/grigorijtomczuk/portfolio"}
+							target="_blank"
+						>
 							<FontAwesomeIcon icon={faCodeBranch} /> v{packageJson.version}
 						</Link>{" "}
 						&copy; {new Date().getFullYear()} grigorijtomczuk

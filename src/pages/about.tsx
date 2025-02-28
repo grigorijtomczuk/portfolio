@@ -22,7 +22,6 @@ const About = () => {
 		<>
 			<div className="page-content">
 				<div className="content-wrapper">
-					<NavBar active="about" />
 					<div className="about-logo-container">
 						<div className="about-logo">
 							<Logo width={40} />

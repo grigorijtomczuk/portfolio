@@ -22,7 +22,6 @@ const Contact = () => {
 		<>
 			<div className="page-content">
 				<div className="content-wrapper">
-					<NavBar active="contact" />
 					<div className="contact-logo-container">
 						<div className="contact-logo">
 							<Logo width={40} />

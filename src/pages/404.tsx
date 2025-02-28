@@ -18,7 +18,6 @@ const NotFound = () => {
 		<>
 			<div className="page-content">
 				<div className="content-wrapper">
-					<NavBar />
 					<div className="notfound-logo-container">
 						<div className="notfound-logo">
 							<Logo width={40} />
