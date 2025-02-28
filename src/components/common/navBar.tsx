@@ -16,20 +16,36 @@ const NavBar = () => {
 				<nav className="navbar">
 					<ul className="nav-list">
 						<li className={currentPath === "/" ? "nav-item active" : "nav-item"}>
-							<Link to="/">Главная</Link>
-							<FontAwesomeIcon className="nav-item-icon" icon={faHome} />
+							<Link className="nav-item-link" to="/">
+								<span className="nav-item-label">Главная</span>
+								<span className="nav-item-icon-container">
+									<FontAwesomeIcon className="nav-item-icon" icon={faHome} />
+								</span>
+							</Link>
 						</li>
 						<li className={currentPath === "/about" ? "nav-item active" : "nav-item"}>
-							<Link to="/about">Обо мне</Link>
-							<FontAwesomeIcon className="nav-item-icon" icon={faNoteSticky} />
+							<Link className="nav-item-link" to="/about">
+								<span className="nav-item-label">Обо мне</span>
+								<span className="nav-item-icon-container">
+									<FontAwesomeIcon className="nav-item-icon" icon={faNoteSticky} />
+								</span>
+							</Link>
 						</li>
 						<li className={currentPath === "/projects" ? "nav-item active" : "nav-item"}>
-							<Link to="/projects">Проекты</Link>
-							<FontAwesomeIcon className="nav-item-icon" icon={faListCheck} />
+							<Link className="nav-item-link" to="/projects">
+								<span className="nav-item-label">Проекты</span>
+								<span className="nav-item-icon-container">
+									<FontAwesomeIcon className="nav-item-icon" icon={faListCheck} />
+								</span>
+							</Link>
 						</li>
 						<li className={currentPath === "/contact" ? "nav-item active" : "nav-item"}>
-							<Link to="/contact">Контакты</Link>
-							<FontAwesomeIcon className="nav-item-icon" icon={faPhone} />
+							<Link className="nav-item-link" to="/contact">
+								<span className="nav-item-label">Контакты</span>
+								<span className="nav-item-icon-container">
+									<FontAwesomeIcon className="nav-item-icon" icon={faPhone} />
+								</span>
+							</Link>
 						</li>
 					</ul>
 					{/* TODO: add mobile theme switch button */}

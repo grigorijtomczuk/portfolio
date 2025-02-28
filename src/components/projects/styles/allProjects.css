@@ -9,7 +9,6 @@
 .all-projects-project {
 	flex-basis: calc(100% / 3);
 	box-sizing: border-box;
-	overflow: hidden;
 }
 
 @media (max-width: 1280px) {
