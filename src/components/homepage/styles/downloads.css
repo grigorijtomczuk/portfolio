@@ -1,7 +1,8 @@
 @import "@/data/styles.css";
 
 .downloads {
-	flex-basis: 50%;
+	flex-grow: 1;
+	flex-shrink: 1;
 }
 
 .downloads-body {
@@ -11,6 +12,5 @@
 
 @media (max-width: 1280px) {
 	.downloads {
-		flex-basis: 50%;
 	}
 }

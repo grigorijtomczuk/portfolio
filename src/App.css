@@ -1,26 +1,13 @@
 @import "@/data/styles.css";
 
-::-webkit-scrollbar {
-	width: 10px;
-}
-
-::-webkit-scrollbar-track {
-	background-color: var(--white);
-}
-
-::-webkit-scrollbar-thumb {
-	border-radius: 5px;
-	background-color: var(--secondary-color);
-}
-
 .page-content {
 	display: flex;
 	position: relative;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	min-height: 100vh;
 	background-color: var(--white);
+	min-height: 100vh;
 }
 
 .page-content:before,
@@ -28,27 +15,27 @@
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	width: calc((100% - 1200px) / 2);
 	border-right: 2px solid var(--quaternary-color);
 	border-left: 2px solid var(--quaternary-color);
-	content: "";
 	background-color: var(--light-gray);
+	width: calc((100% - 1200px) / 2);
+	content: "";
 }
 
 .page-content:before {
-	z-index: 1;
 	left: 0;
+	z-index: 1;
 }
 
 .page-content:after {
-	z-index: 1;
 	right: 0;
+	z-index: 1;
 }
 
 .content-wrapper {
 	position: relative;
-	width: 1000px;
 	margin: 0 auto;
+	width: 1000px;
 }
 
 .title {
@@ -61,8 +48,8 @@
 }
 
 .subtitle {
-	width: 70%;
 	margin-top: 35px;
+	width: 70%;
 	color: var(--secondary-color);
 	font-size: 18px;
 	line-height: 1.6;
@@ -71,8 +58,8 @@
 
 .page-footer {
 	display: block;
-	width: calc(100% - calc((100% - 1200px)));
 	margin-top: 50px;
+	width: calc(100% - calc((100% - 1200px)));
 }
 
 .page-footer::before {
@@ -84,30 +71,26 @@
 }
 
 .general-link {
-	color: var(--link-color);
 	transition: color 0.3s ease;
+	color: var(--link-color);
 }
 
 .alternative-link {
+	transition: color 0.3s ease;
 	color: var(--secondary-color);
 	font-weight: var(--font-bold);
 	text-decoration: none;
-	transition: color 0.3s ease;
 }
 
 .code-span {
-	padding: 2px 6px;
 	border-radius: 8px;
+	background-color: var(--quaternary-color);
+	padding: 2px 6px;
 	font-size: 15px;
 	font-family: var(--monospaced-font);
-	background-color: var(--quaternary-color);
 }
 
 @media (hover: hover) {
-	::-webkit-scrollbar-thumb:hover {
-		background-color: var(--primary-color);
-	}
-
 	.general-link:hover {
 		color: var(--link-hover-color);
 	}
@@ -118,8 +101,8 @@
 
 	/* Put it in here so it works only on desktop */
 	::selection {
-		color: var(--quaternary-color);
 		background-color: var(--link-color);
+		color: var(--quaternary-color);
 	}
 }
 
@@ -130,8 +113,8 @@
 	}
 
 	.content-wrapper {
-		max-width: 85%;
 		margin: 0 auto;
+		max-width: 85%;
 	}
 
 	.page-content:before,
@@ -145,8 +128,8 @@
 	}
 
 	.page-footer {
-		width: 100%;
 		margin-top: 32px;
+		width: 100%;
 	}
 
 	.title {

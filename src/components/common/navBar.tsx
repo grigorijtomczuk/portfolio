@@ -48,11 +48,14 @@ const NavBar = () => {
 							</Link>
 						</li>
 					</ul>
-					{/* TODO: add mobile theme switch button */}
+
 					<div className="theme-switch-container">
 						<ThemeSwitchButton />
 					</div>
 				</nav>
+				<div className="theme-switch-container-mobile">
+					<ThemeSwitchButton />
+				</div>
 			</div>
 		</>
 	);

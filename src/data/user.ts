@@ -38,16 +38,16 @@ class Info implements UserData {
 					image: SuaiLogo,
 					title: "СПбГУАП",
 					subtitle: "Студент",
-					duration: "2023 – Сегодня",
+					duration: "Сен 2023 – Сегодня",
 				},
 				{
 					image: EmsLogo,
 					title: "SUAI Embedded Systems Lab.",
 					subtitle: "Веб-разработчик",
-					duration: "2024 – Сегодня",
+					duration: "Апр 2024 – Фев 2025",
 				},
 			],
-			downloads: "Возможно, здесь будет мое резюме, но пока его нет :)",
+			downloads: "Coming soon ⏱️",
 		};
 
 		this.about = {

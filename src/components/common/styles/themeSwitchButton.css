@@ -13,14 +13,6 @@
 	width: 48px;
 	height: auto;
 
-	@media (hover: hover) {
-		&:hover {
-			& svg {
-				fill: var(--link-color);
-			}
-		}
-	}
-
 	&:active {
 		transform: scale(0.9);
 		box-shadow: var(--box-shadow-strong);
@@ -50,6 +42,14 @@
 
 		&.rotate {
 			animation: 500ms ease rotate360;
+		}
+	}
+}
+
+@media (hover: hover) {
+	#theme-switch:hover {
+		& svg {
+			fill: var(--link-color);
 		}
 	}
 }
