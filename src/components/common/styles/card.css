@@ -7,6 +7,7 @@
 	&::before {
 		display: block;
 		position: absolute;
+		transition: all 0.3s ease;
 		inset: -2px 0;
 		border: 2px solid var(--quaternary-color);
 		border-radius: 20px;

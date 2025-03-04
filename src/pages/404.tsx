@@ -28,7 +28,7 @@ const NotFound = () => {
 							<div className="notfound-title">
 								Опа... <FontAwesomeIcon icon={faFaceSadTear} />
 							</div>
-							<div className="not-found-message">Ссылка не работает!</div>
+							<div className="not-found-message">Такой страницы нет!</div>
 							<Link className="not-found-link" to={"/"}>
 								На главную
 							</Link>

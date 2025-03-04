@@ -17,7 +17,9 @@ const Project = (props: ProjectProps) => {
 								{logos.map((logo, key) => {
 									return (
 										<div className="project-logo" key={key}>
-											<img src={logo} alt="logo" draggable="false" />
+											<img
+												src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${logo}/${logo}-original.svg`}
+											/>
 										</div>
 									);
 								})}

@@ -15,7 +15,7 @@ const Contact = () => {
 	}, []);
 
 	useEffect(() => {
-		document.title = `Связаться ${info.main.titleSeparator} ${info.main.title}`;
+		document.title = `Контакты ${info.main.titleSeparator} ${info.main.title}`;
 	}, []);
 
 	return (
