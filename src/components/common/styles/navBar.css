@@ -23,7 +23,7 @@
 	justify-content: space-between;
 	align-items: center;
 	backdrop-filter: blur(8px);
-	transition: all 0.3s ease;
+	transition: all var(--transition-regular);
 	margin: 0;
 	box-shadow: var(--box-shadow);
 	border-radius: 40px;
@@ -35,17 +35,17 @@
 
 .nav-item {
 	position: relative;
-	transition: all 0.3s ease;
+	transition: all var(--transition-regular);
+	cursor: pointer;
 	width: auto;
 	height: 100%;
 	font-weight: var(--font-bold);
 	font-size: 14px;
-	cursor: pointer;
 
 	.nav-item-link {
 		display: flex;
 		align-items: center;
-		transition: color 0.3s ease;
+		transition: color var(--transition-regular);
 		padding: 0 16px;
 		height: 100%;
 		color: var(--primary-color);
@@ -55,7 +55,7 @@
 	.nav-item-icon-container {
 		display: inline-block;
 		transform: translateX(8px);
-		transition: all 0.3s ease;
+		transition: all var(--transition-regular);
 		width: 0;
 	}
 
@@ -63,7 +63,7 @@
 		transform: scale(0.8);
 		transform-origin: -50% center;
 		opacity: 0;
-		transition: all 0.3s ease;
+		transition: all var(--transition-regular);
 		aspect-ratio: 1;
 		width: 14px;
 		height: auto;

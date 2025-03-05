@@ -6,6 +6,7 @@
 	--quaternary-color: #e4e4e7;
 	--link-color: #1c59ba;
 	--link-hover-color: #123a85;
+	--link-transparent-color: #1c59ba30;
 	--white: #f8f8f8;
 	--transparent-white: #f8f8f8e3;
 	--light-gray: #f0f0f0;
@@ -22,6 +23,8 @@
 
 	--box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 	--box-shadow-strong: 0 2px 4px rgba(0, 0, 0, 0.15);
+
+	--transition-regular: 0.3s ease;
 }
 
 .darkmode {
@@ -31,6 +34,7 @@
 	--quaternary-color: #49494e;
 	--link-color: #407cdb;
 	--link-hover-color: #2f5fb8;
+	--link-transparent-color: #407cdb30;
 	/* fix wrong var names */
 	--white: #363639;
 	--transparent-white: #27272ae3;
