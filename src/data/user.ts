@@ -55,10 +55,12 @@ const info: UserData = {
 			<span class="code-span">backend</span> и чуть больше <span class="code-span">frontend</span> (и кайфую). \
 			Еще я пишу музыку и вожу TTRPG игры. Разработкой я занимаюсь уже практически \
 			<span class="code-span">\
-			${Math.round((Date.now() - new Date("2020-12-01").getTime()) / (1000 * 60 * 60 * 24 * 365))}\
-			&nbsp;года</span> (или же <span class="code-span">\
-			${Math.round((Date.now() - new Date("2020-12-01").getTime()) / (1000 * 60 * 60 * 24))}\
-			&nbsp;дней</span>) и получаю нереальное удовольствие (и деньги).`,
+			${Math.round(
+				(Date.now() - new Date("2020-12-01").getTime()) / (1000 * 60 * 60 * 24 * 365)
+			)}&nbsp;года</span> (или же <span class="code-span">\
+			${Math.round(
+				(Date.now() - new Date("2020-12-01").getTime()) / (1000 * 60 * 60 * 24)
+			)}&nbsp;дней</span>) и получаю нереальное удовольствие (и деньги).`,
 		image: AboutImage,
 	},
 

@@ -33,7 +33,7 @@
 
 .divider-wrapper {
 	position: relative;
-	transition: all var(--transition-regular);
+	transition: border var(--transition-regular);
 	border-top: 2px solid var(--quaternary-color);
 	padding-top: 12px;
 }

@@ -7,7 +7,7 @@
 	&::before {
 		display: block;
 		position: absolute;
-		transition: all var(--transition-regular);
+		transition: border var(--transition-regular);
 		inset: -2px 0;
 		border: 2px solid var(--quaternary-color);
 		border-radius: 20px;

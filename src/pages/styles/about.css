@@ -10,7 +10,7 @@
 	top: 3vh;
 	z-index: 999;
 	backdrop-filter: blur(4px);
-	transition: all var(--transition-regular);
+	transition: border var(--transition-regular);
 	box-shadow: var(--box-shadow);
 	border: 4px solid var(--transparent-white);
 	border-radius: 50%;

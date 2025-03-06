@@ -24,7 +24,8 @@
 	--box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 	--box-shadow-strong: 0 2px 4px rgba(0, 0, 0, 0.15);
 
-	--transition-regular: 0.3s ease;
+	--transition-regular: 300ms ease;
+	--transition-fast: 200ms ease;
 }
 
 .darkmode {

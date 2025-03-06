@@ -3,7 +3,7 @@
 	justify-content: center;
 	align-items: center;
 	backdrop-filter: blur(8px);
-	transition: all 200ms;
+	transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 	cursor: pointer;
 	box-shadow: var(--box-shadow);
 	border: none;
@@ -22,7 +22,7 @@
 	}
 
 	& svg {
-		transition: all 200ms;
+		transition: fill var(--transition-fast);
 		width: 24px;
 		height: 24px;
 		fill: var(--secondary-color);

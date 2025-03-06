@@ -5,7 +5,6 @@
 	justify-content: center;
 	align-items: center;
 	margin: 0;
-	user-select: none;
 }
 
 .navbar {
@@ -23,7 +22,7 @@
 	justify-content: space-between;
 	align-items: center;
 	backdrop-filter: blur(8px);
-	transition: all var(--transition-regular);
+	transition: background-color var(--transition-regular);
 	margin: 0;
 	box-shadow: var(--box-shadow);
 	border-radius: 40px;
@@ -35,12 +34,12 @@
 
 .nav-item {
 	position: relative;
-	transition: all var(--transition-regular);
 	cursor: pointer;
 	width: auto;
 	height: 100%;
 	font-weight: var(--font-bold);
 	font-size: 14px;
+	user-select: none;
 
 	.nav-item-link {
 		display: flex;
@@ -50,12 +49,13 @@
 		height: 100%;
 		color: var(--primary-color);
 		text-decoration: none;
+		-webkit-touch-callout: none; /* Disable iOS Safari on-long-press link pop-out */
 	}
 
 	.nav-item-icon-container {
 		display: inline-block;
 		transform: translateX(8px);
-		transition: all var(--transition-regular);
+		transition: width var(--transition-regular);
 		width: 0;
 	}
 
@@ -63,7 +63,7 @@
 		transform: scale(0.8);
 		transform-origin: -50% center;
 		opacity: 0;
-		transition: all var(--transition-regular);
+		transition: transform var(--transition-regular), opacity var(--transition-regular);
 		aspect-ratio: 1;
 		width: 14px;
 		height: auto;

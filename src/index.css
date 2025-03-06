@@ -1,12 +1,11 @@
 @import "@/data/styles.css";
 
-* {
-	-webkit-touch-callout: none; /* Disable iOS Safari on-long-press link pop-out */
-	-webkit-tap-highlight-color: transparent;
-}
-
 *:focus-visible {
 	outline: none; /* Disable User Agent on-focus outline */
+}
+
+:any-link {
+	-webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -15,7 +14,7 @@ html {
 }
 
 body {
-	transition: all var(--transition-regular);
+	transition: background-color var(--transition-regular);
 	margin: 0;
 	background-color: var(--white);
 	font-family: var(--primary-font);
