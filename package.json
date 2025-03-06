@@ -10,19 +10,7 @@
 		"dev": "craco start",
 		"release": "release-it"
 	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all",
-			"last 2 versions"
-		],
-		"development": [
-			"last 2 chrome versions",
-			"last 2 firefox versions",
-			"last 2 safari versions"
-		]
-	},
+	"browserslist": "defaults",
 	"dependencies": {
 		"@craco/craco": "^7.1.0",
 		"@fortawesome/free-brands-svg-icons": "^6.4.0",

@@ -9,7 +9,7 @@ module.exports = {
 	},
 	style: {
 		postcss: {
-			plugins: [require("postcss-nesting")],
+			plugins: (plugins) => [require("postcss-nesting")].concat(plugins),
 		},
 	},
 };
