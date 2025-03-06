@@ -63,7 +63,8 @@
 		transform: scale(0.8);
 		transform-origin: -50% center;
 		opacity: 0;
-		transition: transform var(--transition-regular), opacity var(--transition-regular);
+		transition: transform var(--transition-regular), opacity var(--transition-regular),
+			color var(--transition-regular);
 		aspect-ratio: 1;
 		width: 14px;
 		height: auto;
