@@ -5,10 +5,12 @@ import { faCloudDownload } from "@fortawesome/free-solid-svg-icons";
 import info from "@/data/user";
 
 const Downloads = () => {
-	const cardBody = <div className="downloads-body">{info.homepage.downloads}</div>;
 	return (
 		<div className="downloads">
-			<Card icon={faCloudDownload} title="Загрузки" body={cardBody} />
+			<Card icon={faCloudDownload} title="Загрузки">
+				<div className="downloads-body">{info.homepage.downloads}</div>
+				{/* TODO: add a PDF Resume */}
+			</Card>
 		</div>
 	);
 };

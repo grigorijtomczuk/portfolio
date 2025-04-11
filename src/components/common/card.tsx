@@ -2,8 +2,7 @@ import "@/components/common/styles/card.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Card = (props: { icon: any; title: any; body: any }) => {
-	const { icon, title, body } = props;
+const Card = ({ children, icon, title }: { children: any; icon: any; title: any }) => {
 	return (
 		<div className="card">
 			<div className="card-container">
@@ -14,7 +13,7 @@ const Card = (props: { icon: any; title: any; body: any }) => {
 					<div className="card-title">{title}</div>
 				</div>
 				<div className="card-body">
-					<div className="card-text">{body}</div>
+					<div className="card-text">{children}</div>
 				</div>
 			</div>
 		</div>

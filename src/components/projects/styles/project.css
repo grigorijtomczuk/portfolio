@@ -1,5 +1,3 @@
-@import "@/data/styles.css";
-
 .project {
 	position: relative;
 	height: 100%;
@@ -55,15 +53,13 @@
 .project-logo {
 	display: inline-block;
 	vertical-align: middle;
+	border-radius: 4px;
+	aspect-ratio: 1;
+	width: 32px;
+	height: auto;
 
 	& + & {
 		margin-left: 8px;
-	}
-
-	& img {
-		aspect-ratio: 1;
-		width: 32px;
-		height: auto;
 	}
 }
 
@@ -120,9 +116,8 @@
 		margin-bottom: 8px;
 	}
 
-	.project-logo img {
+	.project-logo {
 		width: 24px;
-		height: 24px;
 	}
 
 	.project-title {

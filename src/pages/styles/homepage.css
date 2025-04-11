@@ -1,5 +1,3 @@
-@import "@/data/styles.css";
-
 .homepage-logo-container {
 	display: flex;
 	justify-content: left;
@@ -56,7 +54,9 @@
 	transform: rotate(3deg);
 	mask-image: url(@/assets/icons/squircle.svg);
 	box-shadow: var(--box-shadow);
-	max-width: 100%;
+	aspect-ratio: 1;
+	width: 100%;
+	height: auto;
 }
 
 .homepage-socials {

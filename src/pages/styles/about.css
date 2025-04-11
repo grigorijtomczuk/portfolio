@@ -52,7 +52,9 @@
 .about-image {
 	mask-image: url(@/assets/icons/squircle.svg);
 	box-shadow: var(--box-shadow);
-	max-width: 100%;
+	aspect-ratio: 1;
+	width: 100%;
+	height: auto;
 }
 
 .about-socials {

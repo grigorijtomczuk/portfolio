@@ -2,7 +2,6 @@ import "@/pages/styles/contact.css";
 
 import Footer from "@/components/common/footer";
 import Logo from "@/components/common/logo";
-import NavBar from "@/components/common/navBar";
 import Socials from "@/components/about/socials";
 import info from "@/data/user";
 import { renderHtml } from "@/utils/utils";

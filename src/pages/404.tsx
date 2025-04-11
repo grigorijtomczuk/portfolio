@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "@/components/common/footer";
 import { Link } from "react-router-dom";
 import Logo from "@/components/common/logo";
-import NavBar from "@/components/common/navBar";
 import { faFaceSadTear } from "@fortawesome/free-regular-svg-icons";
 import info from "@/data/user";
 import { useEffect } from "react";

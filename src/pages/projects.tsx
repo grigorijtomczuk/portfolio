@@ -3,7 +3,6 @@ import "@/pages/styles/projects.css";
 import AllProjects from "@/components/projects/allProjects";
 import Footer from "@/components/common/footer";
 import Logo from "@/components/common/logo";
-import NavBar from "@/components/common/navBar";
 import info from "@/data/user";
 import { renderHtml } from "@/utils/utils";
 import { useEffect } from "react";

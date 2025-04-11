@@ -36,7 +36,7 @@
 	--link-color: #407cdb;
 	--link-hover-color: #2f5fb8;
 	--link-transparent-color: #407cdb30;
-	/* fix wrong var names */
+	/* FIXME: wrong var names */
 	--white: #363639;
 	--transparent-white: #27272ae3;
 	--light-gray: #3d3d40;

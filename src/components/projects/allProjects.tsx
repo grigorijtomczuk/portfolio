@@ -8,7 +8,13 @@ const AllProjects = (props: { quantity?: number }) => {
 		<div className="all-projects-container">
 			{info.projects.projectsList.slice(0, props ? props.quantity : -1).map((project, index) => (
 				<div className="all-projects-project" key={index}>
-					<Project logos={project.logos} title={project.title} description={project.description} linkText={project.linkText} link={project.link} />
+					<Project
+						logos={project.logos}
+						title={project.title}
+						description={project.description}
+						linkText={project.linkText}
+						link={project.link}
+					/>
 				</div>
 			))}
 		</div>
