@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "@/components/common/image";
 import { Link } from "react-router-dom";
-import Skeleton from "@/components/common/skeleton";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 type ProjectProps = {
@@ -21,7 +20,16 @@ type ProjectWithLoadProps = ProjectProps & {
 	onLoad?: () => void;
 };
 
-const Project = ({ logos, title, description, linkText, link, logosShown, onLoad, ...props }: ProjectWithLoadProps) => {
+const Project = ({
+	logos,
+	title,
+	description,
+	linkText,
+	link,
+	logosShown,
+	onLoad,
+	...props
+}: ProjectWithLoadProps) => {
 	const [loadedLogos, setLoadedLogos] = useState(0);
 	const totalLogos = logos.length;
 
@@ -38,21 +46,14 @@ const Project = ({ logos, title, description, linkText, link, logosShown, onLoad
 				<div className="project-container">
 					<div className="project-info">
 						<div className="project-logos">
-							{/* Show skeletons until all logos on the page are loaded */}
-							{!logosShown &&
-								logos.map((_, index) => (
-									<div className="project-logo" key={index}>
-										<Skeleton />
-									</div>
-								))}
 							{logos.map((logo, index) => (
 								<Image
 									className="project-logo"
 									src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/
 										${logo}/${logo}-original.svg`}
 									key={index}
+									isShown={logosShown} // Show skeletons until logosShown is true
 									onLoad={handleLogoLoad}
-									style={{ display: logosShown ? "inline-block" : "none" }}
 								/>
 							))}
 						</div>

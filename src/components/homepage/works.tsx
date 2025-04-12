@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 
 import Card from "@/components/common/card";
 import Image from "@/components/common/image";
-import Skeleton from "@/components/common/skeleton";
 import { faHourglassHalf } from "@fortawesome/free-solid-svg-icons";
 import info from "@/data/user";
 
@@ -13,7 +12,7 @@ const Works = () => {
 	const [allWorksLoaded, setAllWorksLoaded] = useState(false);
 	const totalWorks = info.homepage.works.length;
 
-	const handleLogoLoad = () => setLoadedWorks((prev) => prev + 1);
+	const handleWorkLoad = () => setLoadedWorks((prev) => prev + 1);
 
 	// Check if all logos are loaded
 	useEffect(() => {
@@ -27,16 +26,11 @@ const Works = () => {
 					{info.homepage.works.map((work, key) => {
 						return (
 							<div className="work" key={key}>
-								{!allWorksLoaded && (
-									<div className="work-image">
-										<Skeleton />
-									</div>
-								)}
 								<Image
 									className="work-image"
 									src={work.image}
-									style={{ display: allWorksLoaded ? "block" : "none" }}
-									onLoad={handleLogoLoad}
+									isShown={allWorksLoaded}
+									onLoad={handleWorkLoad}
 								/>
 								<div className="work-title">{work.title}</div>
 								<div className="work-subtitle">{work.subtitle}</div>
