@@ -21,19 +21,18 @@ const Image = ({ src, alt, onLoad, isShown = true, ...props }: ImageProps): Reac
 
 	return (
 		<div style={{ overflow: "hidden" }} {...props}>
-			<div style={{ width: "100%", height: "100%" }}>
-				{!isDisplayed && <Skeleton />}
-				<img
-					src={src}
-					alt={alt}
-					draggable="false"
-					onLoad={handleLoad}
-					style={{
-						display: isDisplayed ? "block" : "none",
-						maxWidth: "100%",
-					}}
-				/>
-			</div>
+			{!isDisplayed && <Skeleton />}
+			<img
+				src={src}
+				alt={alt}
+				draggable="false"
+				onLoad={handleLoad}
+				style={{
+					display: isDisplayed ? "block" : "none",
+					width: "100%",
+					height: "100%",
+				}}
+			/>
 		</div>
 	);
 };
