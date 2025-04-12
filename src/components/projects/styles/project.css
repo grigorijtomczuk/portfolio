@@ -4,6 +4,7 @@
 
 	@media (hover: hover) {
 		&:hover {
+			box-shadow: var(--box-shadow);
 			.project-link {
 				color: var(--link-color);
 			}
@@ -51,12 +52,18 @@
 }
 
 .project-logos {
-	height: 32px;
+	height: 36px;
 }
 
 .project-logo {
 	display: inline-block;
 	vertical-align: middle;
+	transition: background-color var(--transition-regular), border var(--transition-regular);
+	box-sizing: border-box;
+	box-shadow: var(--box-shadow);
+	border: 4px solid var(--light-gray);
+	border-radius: 8px;
+	background-color: var(--light-gray);
 	aspect-ratio: 1;
 	width: auto;
 	height: 100%;
@@ -117,7 +124,7 @@
 
 	.project-logos {
 		margin-bottom: 8px;
-		height: 24px;
+		height: 32px;
 	}
 
 	.project-title {

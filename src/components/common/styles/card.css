@@ -7,6 +7,7 @@
 		position: absolute;
 		transition: border var(--transition-regular);
 		inset: -2px 0;
+		box-shadow: var(--box-shadow);
 		border: 2px solid var(--quaternary-color);
 		border-radius: 20px;
 		content: "";
