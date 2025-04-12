@@ -9,7 +9,7 @@ const Image = ({ src, alt, onLoad, noSkeleton, ...props }: ImageProps): React.JS
 	const [isLoading, setIsLoading] = useState(true);
 
 	const handleLoad = (event: React.SyntheticEvent<HTMLImageElement>) => {
-		onLoad && onLoad(event);
+		onLoad?.(event);
 		setIsLoading(false);
 	};
 
