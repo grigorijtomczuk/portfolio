@@ -1,29 +1,28 @@
 import "@/components/common/styles/themeSwitchButton.css";
 
-import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
-
 import { ReactComponent as DarkModeIcon } from "@/assets/icons/dark-mode.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ReactComponent as LightModeIcon } from "@/assets/icons/light-mode.svg";
 import { useRef } from "react";
 
-const themeSwitchButton = () => {
-	type Theme = "dark" | "light";
+type Theme = "dark" | "light";
 
+const themeSwitchButton = () => {
 	function getTheme(): Theme | null {
 		return localStorage.getItem("theme") as Theme | null;
 	}
 
 	function setTheme(theme: Theme) {
 		switch (theme) {
-			case "dark":
+			case "dark": {
 				document.body.classList.add("darkmode");
 				localStorage.setItem("theme", "dark");
 				break;
-			case "light":
+			}
+			case "light": {
 				document.body.classList.remove("darkmode");
 				localStorage.setItem("theme", "light");
 				break;
+			}
 		}
 	}
 
@@ -50,6 +49,7 @@ const themeSwitchButton = () => {
 	const button = useRef<HTMLButtonElement>(null);
 	const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
+	// Global theme detection logic is inside this button component - bad?
 	if (theme) {
 		setTheme(theme);
 	} else if (prefersDarkScheme.matches) {
