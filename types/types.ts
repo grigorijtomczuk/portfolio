@@ -39,11 +39,3 @@ export interface UserData {
 		description: string;
 	};
 }
-
-export interface ProjectProps {
-	logos: string[];
-	title: string;
-	description: string;
-	linkText: string;
-	link: string;
-}

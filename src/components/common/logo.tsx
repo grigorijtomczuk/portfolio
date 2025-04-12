@@ -1,27 +1,28 @@
 import "@/components/common/styles/logo.css";
 
+import Image from "@/components/common/image";
 import { Link } from "react-router-dom";
 import info from "@/data/user";
 
-const Logo = (props: { width: any; link?: any }) => {
-	let { width, link } = props;
+type LogoProps = {
+	size: number;
+	noLink?: boolean;
+};
 
-	if (link === undefined) {
-		link = true;
-	}
+const Logo = ({ size, noLink, ...props }: LogoProps) => {
+	const imageElement = <Image className="logo" src={info.main.logo} />;
 
-	const imageElement = <img className="logo" src={info.main.logo} alt="logo" width={width} draggable="false" />;
+	if (noLink)
+		return (
+			<div className="logo" style={{ width: size, height: size }} {...props}>
+				{imageElement}
+			</div>
+		);
 
 	return (
-		<>
-			{link ? (
-				<Link className="logo" to="/">
-					{imageElement}
-				</Link>
-			) : (
-				imageElement
-			)}
-		</>
+		<Link className="logo" to="/" style={{ width: size, height: size }} {...props}>
+			{imageElement}
+		</Link>
 	);
 };
 

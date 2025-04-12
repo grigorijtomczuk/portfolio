@@ -1,27 +1,36 @@
 import Skeleton from "@/components/common/skeleton";
 import { useState } from "react";
 
-const Image = ({ src, alt, ...props }: React.ComponentProps<"img">): React.JSX.Element => {
+type ImageProps = {
+	noSkeleton?: boolean;
+} & React.ComponentProps<"img">;
+
+const Image = ({ src, alt, onLoad, noSkeleton, ...props }: ImageProps): React.JSX.Element => {
 	const [isLoading, setIsLoading] = useState(true);
 
-	const handleLoad = () => {
+	const handleLoad = (event: React.SyntheticEvent<HTMLImageElement>) => {
+		onLoad && onLoad(event);
 		setIsLoading(false);
 	};
 
+	if (noSkeleton)
+		return (
+			<img src={src} alt={alt} draggable="false" onLoad={handleLoad} style={{ maxWidth: "100%" }} {...props} />
+		);
+
 	return (
-		<div {...props} style={{ overflow: "hidden" }}>
+		<div style={{ overflow: "hidden" }} {...props}>
 			<div style={{ width: "100%", height: "100%" }}>
-				{/* <Skeleton /> */}
 				{isLoading && <Skeleton />}
 				<img
 					src={src}
 					alt={alt}
 					draggable="false"
+					onLoad={handleLoad}
 					style={{
 						display: isLoading ? "none" : "block",
 						maxWidth: "100%",
 					}}
-					onLoad={handleLoad}
 				/>
 			</div>
 		</div>

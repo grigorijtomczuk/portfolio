@@ -23,7 +23,7 @@ const Contact = () => {
 				<div className="content-wrapper">
 					<div className="contact-logo-container">
 						<div className="contact-logo">
-							<Logo width={40} />
+							<Logo size={40} />
 						</div>
 					</div>
 

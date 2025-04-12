@@ -1,7 +1,7 @@
 import "@/components/common/styles/skeleton.css";
 
-const Skeleton = () => {
-	return <div className="skeleton"></div>;
+const Skeleton = ({ ...props }: React.ComponentProps<"div">) => {
+	return <div className="skeleton" {...props}></div>;
 };
 
 export default Skeleton;

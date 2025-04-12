@@ -1,5 +1,6 @@
 .skeleton {
 	animation: wave 1s infinite linear forwards;
+	border-radius: 4px;
 	background: linear-gradient(to right, var(--quaternary-color), var(--light-gray) 48%, var(--quaternary-color) 70%);
 	background-size: 600px;
 	width: 100%;
