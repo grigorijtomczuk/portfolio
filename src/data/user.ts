@@ -44,7 +44,20 @@ const info: UserData = {
 				duration: "Апр 2024 – Фев 2025",
 			},
 		],
-		downloads: "Coming soon 🗓️",
+		downloads: [
+			{
+				title: "Томчук Григорий Сергеевич (Fullstack-разработчик).pdf",
+				path:
+					process.env.PUBLIC_URL +
+					"/downloads/tomchuk-grigory-sergeevich-fullstack-developer.pdf",
+			},
+			{
+				title: "Томчук Григорий Сергеевич (Frontend-разработчик).pdf",
+				path:
+					process.env.PUBLIC_URL +
+					"/downloads/tomchuk-grigory-sergeevich-frontend-developer.pdf",
+			},
+		],
 	},
 
 	about: {

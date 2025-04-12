@@ -1,6 +1,5 @@
 .works {
 	flex-grow: 1;
-	flex-shrink: 1;
 	min-width: 390px;
 	max-width: 530px;
 }
@@ -21,7 +20,7 @@
 	grid-column: 1;
 	transition: all var(--transition-regular);
 	box-sizing: border-box;
-	box-shadow: var(--box-shadow-strong);
+	box-shadow: var(--box-shadow);
 	border: 4px solid var(--light-gray);
 	border-radius: 50%;
 	background-color: var(--light-gray);

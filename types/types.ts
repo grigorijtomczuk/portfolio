@@ -4,7 +4,7 @@ export interface UserData {
 		titleSeparator: string;
 		name: string;
 		email: string;
-		logo: any;
+		logo: string;
 	};
 	socials: {
 		github: string;
@@ -15,19 +15,22 @@ export interface UserData {
 	homepage: {
 		title: string;
 		description: string;
-		image: any;
+		image: string;
 		works: {
-			image: any;
+			image: string;
 			title: string;
 			subtitle: string;
 			duration: string;
 		}[];
-		downloads: string;
+		downloads: {
+			title: string;
+			path: string;
+		}[];
 	};
 	about: {
 		title: string;
 		description: string;
-		image: any;
+		image: string;
 	};
 	projects: {
 		title: string;

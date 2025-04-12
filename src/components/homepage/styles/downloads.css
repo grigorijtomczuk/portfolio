@@ -1,14 +1,41 @@
 .downloads {
-	flex-grow: 1;
-	flex-shrink: 1;
+	max-width: 454px;
 }
 
 .downloads-body {
-	color: var(--secondary-color);
 	font-size: 16px;
 }
 
-@media (max-width: 1280px) {
+.download-item {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	transition: color var(--transition-fast);
+	color: var(--link-color);
+	text-decoration: none;
+
+	& + & {
+		margin-top: 6px;
+	}
+
+	@media (hover: hover) {
+		&:hover {
+			color: var(--link-hover-color);
+		}
+	}
+}
+
+.download-item-icon {
+	font-size: 1.25em;
+}
+
+.download-item-title {
+	margin: 0;
+}
+
+@media (max-width: 768px) {
 	.downloads {
+		min-width: auto;
+		max-width: 100%;
 	}
 }

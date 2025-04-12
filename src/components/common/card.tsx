@@ -1,8 +1,14 @@
 import "@/components/common/styles/card.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import type { IconProp } from "@fortawesome/fontawesome-svg-core";
 
-const Card = ({ children, icon, title }: { children: any; icon: any; title: any }) => {
+type CardProps = React.PropsWithChildren<{
+	icon: IconProp;
+	title: string;
+}>;
+
+const Card = ({ children, icon, title }: CardProps) => {
 	return (
 		<div className="card">
 			<div className="card-container">

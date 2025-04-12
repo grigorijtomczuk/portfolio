@@ -23,21 +23,19 @@ const Works = () => {
 		<div className="works">
 			<Card icon={faHourglassHalf} title="Таймлайн">
 				<div className="works-body">
-					{info.homepage.works.map((work, key) => {
-						return (
-							<div className="work" key={key}>
-								<Image
-									className="work-image"
-									src={work.image}
-									isShown={allWorksLoaded}
-									onLoad={handleWorkLoad}
-								/>
-								<div className="work-title">{work.title}</div>
-								<div className="work-subtitle">{work.subtitle}</div>
-								<div className="work-duration">{work.duration}</div>
-							</div>
-						);
-					})}
+					{info.homepage.works.map((work, key) => (
+						<div className="work" key={key}>
+							<Image
+								className="work-image"
+								src={work.image}
+								isShown={allWorksLoaded}
+								onLoad={handleWorkLoad}
+							/>
+							<div className="work-title">{work.title}</div>
+							<div className="work-subtitle">{work.subtitle}</div>
+							<div className="work-duration">{work.duration}</div>
+						</div>
+					))}
 				</div>
 			</Card>
 		</div>
