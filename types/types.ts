@@ -9,7 +9,7 @@ export interface UserData {
 	socials: {
 		github: string;
 		linkedin: string;
-		stackoverflow: string;
+		leetcode: string;
 		telegram: string;
 	};
 	homepage: {
@@ -32,7 +32,13 @@ export interface UserData {
 	projects: {
 		title: string;
 		description: string;
-		projectsList: { title: string; description: string; logos: string[]; linkText: string; link: string }[];
+		projectsList: {
+			title: string;
+			description: string;
+			logos: string[];
+			linkText: string;
+			link: string;
+		}[];
 	};
 	contact: {
 		title: string;

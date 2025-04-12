@@ -1,13 +1,14 @@
 import "@/pages/styles/homepage.css";
 
 import React, { useEffect, useState } from "react";
-import { faGithub, faLinkedin, faStackOverflow, faTelegram } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faTelegram } from "@fortawesome/free-brands-svg-icons";
 
 import AllProjects from "@/components/projects/allProjects";
 import Downloads from "@/components/homepage/downloads";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "@/components/common/footer";
 import Image from "@/components/common/image";
+import LeetCodeIcon from "@/components/icons/LeetCodeIcon";
 import Logo from "@/components/common/logo";
 import Works from "@/components/homepage/works";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -94,11 +95,11 @@ const Homepage = () => {
 							</a>
 							<a
 								className="homepage-social-icon"
-								href={info.socials.stackoverflow}
+								href={info.socials.leetcode}
 								target="_blank"
 								rel="noreferrer"
 							>
-								<FontAwesomeIcon icon={faStackOverflow} />
+								<LeetCodeIcon />
 							</a>
 							<a
 								className="homepage-social-icon"
@@ -108,7 +109,11 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon icon={faTelegram} />
 							</a>
-							<a className="homepage-social-icon" href={`mailto:${info.main.email}`} rel="noreferrer">
+							<a
+								className="homepage-social-icon"
+								href={`mailto:${info.main.email}`}
+								rel="noreferrer"
+							>
 								<FontAwesomeIcon icon={faEnvelope} />
 							</a>
 						</div>

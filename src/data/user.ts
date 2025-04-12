@@ -16,7 +16,7 @@ const mainInfo = {
 const socialsInfo = {
 	github: "https://github.com/grigorijtomczuk",
 	linkedin: "https://www.linkedin.com/in/grigorijtomczuk",
-	stackoverflow: "https://stackoverflow.com/users/18726695/grigory-tomchuk",
+	leetcode: "https://leetcode.com/u/grigorijtomczuk",
 	telegram: "https://t.me/grigorijtomczuk",
 };
 
@@ -116,14 +116,16 @@ const info: UserData = {
 			},
 			{
 				title: "Strawberrette The Pig",
-				description: "Telegram-бот, который имеет некоторую практическую и эстетическую ценность.",
+				description:
+					"Telegram-бот, который имеет некоторую практическую и эстетическую ценность.",
 				logos: ["python"],
 				linkText: "Исходный код",
 				link: "https://github.com/grigorijtomczuk/strawberrette-pig",
 			},
 			{
 				title: "TODO React TypeScript",
-				description: "Простое TODO приложение, написанное на Vite React в связке с TypeScript.",
+				description:
+					"Простое TODO приложение, написанное на Vite React в связке с TypeScript.",
 				logos: ["react", "typescript"],
 				linkText: "Исходный код",
 				link: "https://github.com/grigorijtomczuk/todo-react-ts",
