@@ -19,7 +19,7 @@ const themeSwitchButton = () => {
 				break;
 			}
 			case "light": {
-				document.body.classList.remove("darkmode");
+				document.body.removeAttribute("class");
 				localStorage.setItem("theme", "light");
 				break;
 			}

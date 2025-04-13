@@ -24,8 +24,8 @@ Promise.all([
 ]).then(() => {
 	rootDiv.style.opacity = "1";
 	spinner.remove();
-	// Remove inline transition: "none" property so it can be set in stylesheet
-	document.body.style.transition = "";
+	// Remove transition: "none" and bg-color so they can be set in stylesheet
+	document.body.removeAttribute("style");
 });
 
 root.render(
