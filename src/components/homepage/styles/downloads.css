@@ -1,9 +1,11 @@
 .downloads {
+	flex-grow: 1;
 	max-width: 454px;
 }
 
 .downloads-body {
-	font-size: 16px;
+	margin-left: 4px;
+	font-size: 14px;
 }
 
 .download-item {

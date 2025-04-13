@@ -15,12 +15,13 @@ const Image = ({ src, alt, onLoad, isShown = true, ...props }: ImageProps): Reac
 		setIsLoading(false);
 	};
 
+	// FIXME: Grouped images randomly don't get their skeleton removed at all in Firefox
 	useEffect(() => {
 		if (!isLoading && isShown) setIsDisplayed(true);
 	}, [isLoading, isShown]);
 
 	return (
-		<div style={{ overflow: "hidden" }} {...props}>
+		<div style={{ position: "relative", overflow: "hidden" }} {...props}>
 			{!isDisplayed && <Skeleton />}
 			<img
 				src={src}
@@ -28,7 +29,6 @@ const Image = ({ src, alt, onLoad, isShown = true, ...props }: ImageProps): Reac
 				draggable="false"
 				onLoad={handleLoad}
 				style={{
-					display: isDisplayed ? "block" : "none",
 					width: "100%",
 					height: "100%",
 				}}
