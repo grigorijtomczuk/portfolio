@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b1078b93.css",
-    "main.js": "/portfolio/static/js/main.a7e8d270.js",
-    "static/media/about.jpg": "/portfolio/static/media/about.08e0fcca328a2caa83c4.jpg",
+    "main.css": "/portfolio/static/css/main.77bdde5a.css",
+    "main.js": "/portfolio/static/js/main.ec5753a3.js",
     "static/media/logo.jpg": "/portfolio/static/media/logo.66a2932341c061e0d52a.jpg",
+    "static/media/about.jpg": "/portfolio/static/media/about.4a1c6e8b4b5b0ec4d335.jpg",
     "static/media/homepage.jpg": "/portfolio/static/media/homepage.4f674c15e31398a00912.jpg",
-    "static/media/ems.png": "/portfolio/static/media/ems.d792b9adcb9943c52089.png",
+    "static/media/ems.png": "/portfolio/static/media/ems.a158ed919c2497e9d59f.png",
     "static/media/suai.svg": "/portfolio/static/media/suai.d6048bd3322cdf060b0f8df864fab723.svg",
     "index.html": "/portfolio/index.html",
     "static/media/light-mode.svg": "/portfolio/static/media/light-mode.3c9fd53b29b189643315d3f61502d018.svg",
@@ -13,7 +13,7 @@
     "static/media/squircle.svg": "/portfolio/static/media/squircle.52c61ec32743ca35f1af.svg"
   },
   "entrypoints": [
-    "static/css/main.b1078b93.css",
-    "static/js/main.a7e8d270.js"
+    "static/css/main.77bdde5a.css",
+    "static/js/main.ec5753a3.js"
   ]
 }
