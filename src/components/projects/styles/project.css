@@ -1,10 +1,12 @@
 .project {
 	position: relative;
 	height: 100%;
+	--sparkly-text-size: 0;
 
 	@media (hover: hover) {
 		&:hover {
 			box-shadow: var(--box-shadow);
+			--sparkly-text-size: revert;
 			.project-link {
 				color: var(--link-color);
 			}
@@ -55,22 +57,53 @@
 	height: 36px;
 }
 
+.project-logo-container {
+	display: inline-block;
+	position: relative;
+	height: 100%;
+
+	& + & {
+		margin-left: 8px;
+	}
+
+	&::after {
+		display: inline-block;
+		position: absolute;
+		transition: background-color var(--transition-fast);
+		box-sizing: border-box;
+		inset: 0;
+		box-shadow: var(--box-shadow);
+		border-radius: 8px;
+		background-color: var(--quaternary-color);
+		content: "";
+	}
+}
+
+.project-logo-container-hover {
+	& .project-logo {
+		transform: translate(3px, -5px);
+		border-color: var(--quaternary-color);
+		background-color: var(--quaternary-color);
+	}
+	&::after {
+		background-color: var(--link-transparent-color);
+	}
+}
+
 .project-logo {
 	display: inline-block;
+	position: relative;
 	vertical-align: middle;
-	transition: background-color var(--transition-regular), border var(--transition-regular);
+	z-index: 100;
+	transition: transform var(--transition-fast), background-color var(--transition-fast),
+		border-color var(--transition-fast);
 	box-sizing: border-box;
-	box-shadow: var(--box-shadow);
 	border: 4px solid var(--light-gray);
 	border-radius: 8px;
 	background-color: var(--light-gray);
 	aspect-ratio: 1;
 	width: auto;
 	height: 100%;
-
-	& + & {
-		margin-left: 8px;
-	}
 }
 
 .project-title {

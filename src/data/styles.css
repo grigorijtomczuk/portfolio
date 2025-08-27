@@ -26,6 +26,10 @@
 
 	--transition-regular: 300ms ease;
 	--transition-fast: 200ms ease;
+
+	/* ------- sparkly-text ------- */
+	--sparkly-text-color: var(--link-transparent-color);
+	--sparkly-text-size: 2em;
 }
 
 .darkmode {
@@ -40,4 +44,7 @@
 	--white: #363639;
 	--transparent-white: #27272ae3;
 	--light-gray: #3d3d40;
+
+	/* ------- sparkly-text ------- */
+	--sparkly-text-color: var(--link-transparent-color);
 }

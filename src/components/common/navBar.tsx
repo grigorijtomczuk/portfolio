@@ -27,11 +27,16 @@ const NavBar = () => {
 							<Link className="nav-item-link" to="/about">
 								<span className="nav-item-label">Обо мне</span>
 								<span className="nav-item-icon-container">
-									<FontAwesomeIcon className="nav-item-icon" icon={faNoteSticky} />
+									<FontAwesomeIcon
+										className="nav-item-icon"
+										icon={faNoteSticky}
+									/>
 								</span>
 							</Link>
 						</li>
-						<li className={currentPath === "/projects" ? "nav-item active" : "nav-item"}>
+						<li
+							className={currentPath === "/projects" ? "nav-item active" : "nav-item"}
+						>
 							<Link className="nav-item-link" to="/projects">
 								<span className="nav-item-label">Проекты</span>
 								<span className="nav-item-icon-container">
@@ -41,7 +46,9 @@ const NavBar = () => {
 						</li>
 						<li className={currentPath === "/contact" ? "nav-item active" : "nav-item"}>
 							<Link className="nav-item-link" to="/contact">
-								<span className="nav-item-label">Контакты</span>
+								<span className="nav-item-label">
+									<sparkly-text number-of-sparkles="5">Контакты</sparkly-text>
+								</span>
 								<span className="nav-item-icon-container">
 									<FontAwesomeIcon className="nav-item-icon" icon={faPhone} />
 								</span>
