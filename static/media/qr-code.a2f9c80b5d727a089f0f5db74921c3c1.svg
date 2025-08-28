@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 300 300">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+      }
+
+      .st1 {
+        clip-path: url(#clippath-1);
+      }
+
+      .st2 {
+        clip-path: url(#clippath-3);
+      }
+
+      .st3 {
+        clip-path: url(#clippath-4);
+      }
+
+      .st4 {
+        clip-path: url(#clippath-2);
+      }
+
+      .st5 {
+        clip-path: url(#clippath-7);
+      }
+
+      .st6 {
+        clip-path: url(#clippath-6);
+      }
+
+      .st7 {
+        clip-path: url(#clippath-5);
+      }
+
+      .st8 {
+        fill-opacity: 0;
+      }
+
+      .st9 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="st0" width="300" height="300"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <path class="st0" d="M185,5v10h10V5h-10ZM145,5v10h-10v10V5h-10v20h-10v10h-10v10-20h10v-10h10V5h-10v10V5h-10v20h-10v30h10v-10,30h10v-20h10v-20h10v-10,10h10v-10,20h-10v10h-10v20h-10v10h-10v10-10h-10v20h-10v10-20h10v-10h-10v10-10h-10v20h-10v10-20h10v-10h-10v10h-10v30h-10v10h-10v10h10v-10h10v-10,40h10v-10h10v-10h10v-10h10v-10h10v-30h10v-10h10v-10,40h10v-20h10v-10h10v-30h10v-10,30h10v-10h10v-10,20h10v-20h10v-10,10h10V15h-10v30h-10v10-10h-10v10-20h-10v10-10h-10v10-10h-10v20h-10v20h-10v10-20h10v-20h10V5h-10ZM145,15v10-10ZM125,25v10-10ZM115,35v10-10ZM175,45v10-10ZM115,45v10-10ZM175,55v10-10ZM135,55v10-10ZM145,75v10-10ZM135,85v10-10ZM95,105v20h-10v10h-10v10h-10v10-20h10v-10h10v-10h10v-10ZM75,105v20h-10v10-20h10v-10ZM95,5v10V5h-10v20h10v-10h10V5h-10ZM165,15v10h10v-10h-10ZM205,65v10h-10v10h-10v20h10v-10,10h10v-10h10v-30h-10ZM205,75v10-10ZM205,85v10-10ZM195,85v10-10ZM85,65v10h10v-10h-10ZM285,85v10-10h-10v20h-10v10-20h-10v10-10h-10v20h-10v10-20h10v-10h-10v10h-10v20h-10v10h10v-10,30h-10v10h-10v10h-10v30h10v-20h10v-20h10v-10h10v-30h10v-10,10h10v-10,10h10v-10h10v-10h10v-10h10v-10h-10ZM255,105v10-10ZM205,175v10-10ZM215,85v10h10v-10h-10ZM165,85v10h10v-10h-10ZM155,85v10h10v-10h-10ZM15,85v10H5v10h10v-10h10v-10h-10ZM45,95v10h10v-10h-10ZM215,105v10h10v-10h-10ZM165,105v10h10v-10h-10ZM155,105v10h10v-10h-10ZM135,105v10h10v-10h-10ZM25,105v10-10h-10v10H5v10h10v-10,20h10v-10h10v-20h-10ZM25,115v10-10ZM195,115v10h-10v20h10v-20h10v-10h-10ZM105,115v20h-10v20h-10v10h10v-10,20h-10v10-10h-10v10h-10v10h10v-10,10h10v-10h10v-10,30h10v-10,10h10v-10,30h-10v10h10v-10,20h-10v10h-10v20h-10v10h10v-10h10v-20h10v-10h10v-30h10v-10,30h-10v20h-10v20h-10v10h10v-10,10h10v-30h10v-10h10v-20h10v-10,20h-10v20h10v-10,10h10v-50h-10v10h-10v10-30h10v-10h-10v10h-10v10h-10v10-30h-10v10-10h-10v10-30h10v-10h-10v10-20h10v-30h-10ZM105,135v10-10ZM155,235v10-10ZM135,235v10-10ZM35,115v10h10v-10h-10ZM275,125v10h10v-10h-10ZM205,125v10h-10v10h10v-10h10v-10h-10ZM285,135v10h10v-10h-10ZM255,135v10h10v-10h-10ZM245,135v10h-10v10h10v-10h10v-10h-10ZM275,155v10-10h-10v10-10h-10v20h-10v10-20h10v-10h-10v10h-10v10h-10v10h10v-10,20h-10v10-10h-10v10h-10v10h-10v10-10h-10v20h10v-10,20h-10v10h10v-10,30h10v-10,10h10v-20h10v-10h-10v10-40h10v-10,10h10v-20h10v-10h10v-10h10v-10,10h10v-10h10v-10h-10ZM215,205v10-10ZM205,215v10-10ZM205,225v10-10ZM205,235v10-10ZM205,245v10-10ZM205,255v10-10ZM185,155v10h10v-10h-10ZM75,155v10h-10v10h10v-10h10v-10h-10ZM25,155v20h-10v10-10H5v40h10v-20h10v-20h10v-20h-10ZM15,185v10-10ZM15,155v10h10v-10h-10ZM35,165v20h-10v20h10v-20h10v-20h-10ZM285,175v20h10v-20h-10ZM185,175v10h10v-10h-10ZM255,185v20h-10v40h-10v20h-10v10-10h-10v20h10v-10h10v-10,10h10v-20h10v-10h10v-10h-10v10-20h10v-10,10h10v-20h-10v10h-10v10-20h10v-20h-10ZM245,245v10-10ZM155,185v10h10v-10h-10ZM285,205v10h10v-10h-10ZM235,205v10h10v-10h-10ZM175,205v10h10v-10h-10ZM75,205v10h10v-10h-10ZM65,205v10h10v-10h-10ZM55,205v10h10v-10h-10ZM45,205v10h10v-10h-10ZM35,205v10h10v-10h-10ZM85,215v20h10v-20h-10ZM225,225v10h10v-10h-10ZM95,225v10h10v-10h-10ZM275,235v20h-10v10h-10v10-10h-10v30h10v-10h10v-20h10v-10,20h-10v20h10v-20h10v-40h-10ZM255,275v10-10ZM225,245v10h10v-10h-10ZM175,245v10-10h-10v20h10v-10h10v-10h-10ZM175,265v10h10v-10h-10ZM285,275v10h10v-10h-10ZM155,275v10h-10v10h10v-10h10v-10h-10ZM135,275v20h10v-20h-10ZM125,275v10h10v-10h-10ZM195,285v10h10v-10h-10ZM175,285v10h10v-10h-10ZM165,285v10h10v-10h-10Z"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <path class="st0" d="M5,5v70h70V5H5ZM15,15h50v50H15V15Z"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <path class="st0" d="M45,25v10-10h-10v10-10h-10v30h10v-10,10h10v-10,10h10v-30h-10ZM45,35v10-10ZM35,35v10-10Z"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <path class="st0" d="M295,5h-70v70h70V5ZM285,15v50h-50V15h50Z"/>
+    </clipPath>
+    <clipPath id="clippath-5">
+      <path class="st0" d="M265,25v10-10h-10v10-10h-10v30h10v-10,10h10v-10,10h10v-30h-10ZM265,35v10-10ZM255,35v10-10Z"/>
+    </clipPath>
+    <clipPath id="clippath-6">
+      <path class="st0" d="M5,295h70v-70H5v70ZM15,285v-50h50v50H15Z"/>
+    </clipPath>
+    <clipPath id="clippath-7">
+      <path class="st0" d="M45,245v10-10h-10v10-10h-10v30h10v-10,10h10v-10,10h10v-30h-10ZM45,255v10-10ZM35,255v10-10Z"/>
+    </clipPath>
+  </defs>
+  <g class="st9">
+    <rect class="st8" width="300" height="300"/>
+  </g>
+  <g class="st1">
+    <rect width="300" height="300"/>
+  </g>
+  <g class="st4">
+    <rect x="5" y="5" width="70" height="70"/>
+  </g>
+  <g class="st2">
+    <rect x="25" y="25" width="30" height="30"/>
+  </g>
+  <g class="st3">
+    <rect x="225" y="5" width="70" height="70"/>
+  </g>
+  <g class="st7">
+    <rect x="245" y="25" width="30" height="30"/>
+  </g>
+  <g class="st6">
+    <rect x="5" y="225" width="70" height="70"/>
+  </g>
+  <g class="st5">
+    <rect x="25" y="245" width="30" height="30"/>
+  </g>
+  <path d="M174.6,125.7s5.5-2.1,5,3.1c-.2,2.1-1.5,9.6-2.6,17.7l-3.7,24s-.3,3.5-3,4.1c-2.7.6-6.9-2.1-7.6-2.8-.6-.5-11.4-7.3-15.2-10.7-1.1-.9-2.3-2.8.2-4.9l16-15.3c1.8-1.8,3.7-6.1-4-.9l-21.3,14.5s-2.4,1.5-7,.2l-9.9-3.1s-3.7-2.3,2.6-4.6c15.2-7.2,34-14.5,50.6-21.4Z"/>
+</svg>
