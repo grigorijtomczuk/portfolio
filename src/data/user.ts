@@ -2,8 +2,13 @@ import AboutImage from "@/assets/images/about.jpg";
 import EmsLogo from "@/assets/images/ems.png";
 import HomepageImage from "@/assets/images/homepage.jpg";
 import Logo from "@/assets/images/logo.jpg";
+import { ReactComponent as QRCode } from "@/assets/images/qr-code.svg";
 import SuaiLogo from "@/assets/images/suai.svg";
 import type { UserData } from "types/types";
+
+const experienceYears = Math.round(
+	(Date.now() - new Date("2022-06-01").getTime()) / (1000 * 60 * 60 * 24 * 365)
+);
 
 const mainInfo = {
 	title: "Grigory Tomchuk",
@@ -25,10 +30,11 @@ const info: UserData = {
 	socials: socialsInfo,
 
 	homepage: {
-		title: "Просто студент и хороший человек",
-		description: `У Вас имеются претензии к заголовку? Вы не согласны? Тогда прошу написать мне на \
-			<a class="general-link" href="mailto:${mainInfo.email}">почту</a>. В любом случае, спасибо что \
-			зашли на этот сайт! Здесь вы можете узнать обо мне, о моей деятельности и о способах связаться со мной.`,
+		title: "Программист. Дизайнер. Иногда просто человек.",
+		description:
+			"Этот сайт — о том, чем я живу: разработка, дизайн и идеи. \
+			Я верю, что технологии должны быть простыми и полезными. \
+			Если думаете так же — добро пожаловать, у нас уже есть общий язык.",
 		image: HomepageImage,
 		works: [
 			{
@@ -61,28 +67,29 @@ const info: UserData = {
 	},
 
 	about: {
-		title: "Меня зовут Григорий и я из Санкт-Петербурга",
-		description: `Не люблю рассказывать о себе в подробностях публично. Может быть, нам стоит познакомиться \
-			поближе? Ладно, шутки в сторону. За все время, что я провел на сервере "Земля", я успел научиться \
-			многим вещам и полюбил многие занятия. В первую очередь я занимаюсь веб-разработкой. Изучаю немного \
-			<span class="code-span">backend</span> и чуть больше <span class="code-span">frontend</span> (и кайфую). \
-			Еще я пишу музыку и вожу TTRPG игры. Разработкой я занимаюсь уже практически \
-			<span class="code-span">\
-			${Math.round(
-				(Date.now() - new Date("2020-12-01").getTime()) / (1000 * 60 * 60 * 24 * 365)
-			)}&nbsp;года</span> (или же <span class="code-span">\
-			${Math.round(
-				(Date.now() - new Date("2020-12-01").getTime()) / (1000 * 60 * 60 * 24)
-			)}&nbsp;дней</span>) и получаю нереальное удовольствие (и деньги).`,
+		title: "Меня зовут Григорий, я из Санкт-Петербурга",
+		description: `Моя основная деятельность связана с веб&#8209;разработкой. Я работаю с
+		<span class="code-span">frontend</span>&#8209;технологиями, изучаю <span class="code-span">
+		backend</span> и стремлюсь создавать проекты, которые сочетают
+		удобство, функциональность и современный дизайн. Опыт в этой сфере у меня уже почти
+		<span class="code-span">${experienceYears}&nbsp;${
+			experienceYears === 1 ? "год" : experienceYears < 5 ? "года" : "лет"
+		}</span>.
+		<div class="space"><div/>
+		Помимо разработки, я занимаюсь музыкой и ведением настольных ролевых игр.
+		Эти занятия помогают развивать креативное мышление и находить новые подходы
+		к работе над проектами. Для меня важно постоянно учиться и совершенствовать навыки,
+		а также находить решения, которые делают технологии простыми и полезными.`,
 		image: AboutImage,
 	},
 
 	projects: {
-		title: "Мои штучки",
-		description: `За все время работы и практики из моей интеллектуальной мастерской вышло приличное количество \
-			готовых и не совсем готовых проектов. С полным перечнем можно ознакомиться на моем \
-			<a class="general-link" href="${socialsInfo.github}" target="_blank">GitHub</a>, где также можно \
-			создать форк и внести свои предложения в любой проект.`,
+		title: "Мои проекты",
+		description: `Здесь собраны результаты моей работы и практики — от полноценных решений до
+			экспериментальных идей. Большая часть проектов доступна на моем
+			<a class="general-link" href="${socialsInfo.github}" target="_blank">GitHub</a>.
+			Там Вы можете посмотреть код, ознакомиться с деталями реализации и при желании
+			внести свои предложения.`,
 		projectsList: [
 			{
 				title: "Backend API TypeScript",
@@ -156,12 +163,14 @@ const info: UserData = {
 
 	contact: {
 		title: "Давайте знакомиться",
-		description: `Спасибо за проявленный интерес и желание связаться со мной! Здесь Вы сможете \
-			найти мои контакты. Обращайтесь ко мне по любому поводу, будь то деловое предложение или же \
-			исключительно технический вопрос. Если Ваше сообщение не требует скорейшего ответа, я прошу Вас \
-			написать мне на <a class="general-link" href="mailto:${mainInfo.email}">почту</a>. В противном случае, \
-			пишите мне в <a class="general-link" href="${socialsInfo.telegram}" target="_blank">Telegram</a>, \
-			я почти всегда готов ответить.`,
+		description: `Спасибо за проявленный интерес и желание связаться со мной. Здесь Вы сможете \
+			найти мои контакты. Обращайтесь ко мне по любому поводу: будь то деловое предложение или же \
+			исключительно технический вопрос.
+			<div class="space"></div>
+			Пишите мне на <a class="general-link" href="mailto:${mainInfo.email}">почту</a> или
+			в <a class="general-link" href="${socialsInfo.telegram}" target="_blank">Telegram</a> —
+			буду рад обсудить любые вопросы, связанные с проектами, работой или сотрудничеством.`,
+		qrCode: QRCode,
 	},
 };
 

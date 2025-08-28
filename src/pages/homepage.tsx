@@ -28,9 +28,9 @@ const Homepage = () => {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			setLogoSize(initialLogoSize - window.scrollY * 0.35);
+			setLogoSize(initialLogoSize - window.scrollY * 0.335);
 
-			if (window.scrollY > window.innerHeight * 0.125) {
+			if (window.scrollY > window.innerHeight * 0.115) {
 				setLogoSize(endLogoSize);
 				setStayLogo(true);
 			} else {
@@ -44,7 +44,7 @@ const Homepage = () => {
 
 	const logoStyle = {
 		position: stayLogo ? "fixed" : "relative",
-		top: stayLogo ? "3vh" : "auto",
+		top: stayLogo ? "26px" : "auto",
 	} as React.CSSProperties;
 
 	useEffect(() => {

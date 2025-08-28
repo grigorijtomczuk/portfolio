@@ -7,7 +7,7 @@
 .about-logo {
 	display: flex;
 	position: fixed;
-	top: 3vh;
+	top: 26px;
 	z-index: 999;
 	backdrop-filter: blur(4px);
 	transition: border var(--transition-regular);
@@ -45,16 +45,42 @@
 }
 
 .about-image-container {
+	position: relative;
+	filter: drop-shadow(var(--box-shadow));
 	width: 370px;
 	height: 370px;
+
+	&::after {
+		display: block;
+		position: absolute;
+		transform: translate(-10px, 10px);
+		mask-image: url(@/assets/icons/squircle.svg);
+		inset: 0;
+		background: var(--quaternary-color);
+		content: "";
+	}
+
+	&::before {
+		display: block;
+		position: absolute;
+		transform: translate(-20px, 20px);
+		mask-image: url(@/assets/icons/squircle.svg);
+		inset: 0;
+		background-color: var(--link-transparent-color);
+		content: "";
+	}
 }
 
 .about-image {
+	z-index: 100;
 	mask-image: url(@/assets/icons/squircle.svg);
-	box-shadow: var(--box-shadow);
 	aspect-ratio: 1;
 	width: 100%;
 	height: auto;
+	& img {
+		object-fit: cover;
+		object-position: 0 8%;
+	}
 }
 
 .about-socials {

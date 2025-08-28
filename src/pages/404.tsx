@@ -28,9 +28,6 @@ const NotFound = () => {
 								Опа... <FontAwesomeIcon icon={faFaceSadTear} />
 							</div>
 							<div className="not-found-message">Такой страницы нет!</div>
-							<Link className="not-found-link" to={"/"}>
-								На главную
-							</Link>
 						</div>
 					</div>
 				</div>

@@ -8,7 +8,7 @@
 .notfound-logo {
 	display: flex;
 	position: fixed;
-	top: 3vh;
+	top: 26px;
 	z-index: 999;
 	backdrop-filter: blur(4px);
 	box-shadow: var(--box-shadow);
@@ -44,58 +44,18 @@
 }
 
 .not-found-message {
-	margin: 2rem 0;
+	margin-top: 10px;
 	color: var(--secondary-color);
 	font-size: 18px;
 	text-align: center;
 }
 
-.not-found-link {
-	transition: background-color var(--transition-regular), box-shadow var(--transition-regular),
-		color var(--transition-regular);
-	border-radius: 50px;
-	background-color: var(--link-color);
-	padding: 1rem 2rem;
-	color: var(--white);
-	font-size: 18px;
-	text-decoration: none;
-}
-
-@media (hover: hover) {
-	.not-found-link:hover {
-		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-		background-color: var(--white);
-		color: var(--link-color);
-	}
-}
-
 @media (max-width: 1280px) {
-	.notfound-container {
-		padding-top: 33vh;
-	}
-	.notfound-message {
-		position: absolute;
-		top: auto;
-		left: auto;
-		transform: none;
-		width: 100%;
-	}
+	/* .notfound-container {} */
+	/* .notfound-message {} */
 
 	.notfound-title {
 		font-size: 48px;
-	}
-
-	.not-found-message {
-		margin-top: 10px;
-		margin-right: 32px;
-		margin-left: -5px;
-		width: 100%;
-		font-size: 18px;
-	}
-
-	.not-found-link {
-		padding: 15px 15px;
-		font-size: 18px;
 	}
 
 	.notfound-logo-container {

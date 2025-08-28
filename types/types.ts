@@ -46,5 +46,6 @@ export interface UserData {
 	contact: {
 		title: string;
 		description: string;
+		qrCode: React.ElementType;
 	};
 }

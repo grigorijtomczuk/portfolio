@@ -1,5 +1,11 @@
 @import "@/data/styles.css";
 
+/* For a smooth theme switch transition */
+*::before,
+*::after {
+	transition: background var(--transition-regular);
+}
+
 *:focus-visible {
 	outline: none; /* Disable User Agent on-focus outline */
 }
@@ -9,6 +15,7 @@
 }
 
 html {
+	/* FIXME: no gutter on page */
 	scrollbar-gutter: stable;
 	-webkit-text-size-adjust: 100%;
 }

@@ -7,7 +7,7 @@
 .projects-logo {
 	display: flex;
 	position: fixed;
-	top: 3vh;
+	top: 26px;
 	z-index: 999;
 	backdrop-filter: blur(4px);
 	transition: border var(--transition-regular);
