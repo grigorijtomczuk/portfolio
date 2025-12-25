@@ -11,7 +11,7 @@
 
 .page-content:before,
 .page-content:after {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	bottom: 0;
 	transition: background-color var(--transition-regular), border var(--transition-regular);

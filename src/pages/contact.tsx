@@ -43,7 +43,7 @@ const Contact = () => {
 								<div className="contact-qr-profile-image-container">
 									<Image
 										className="contact-qr-profile-image"
-										src="https://cdn4.telesco.pe/file/FHFYGK1FOwmBZ5bQTsBe9pioo6iBShWl0ok7bbEZavpHahME1lBydfiD9cSjcFGE6wvjB38yuVhRiIy6DHXTA5X1wFxI8EbnuBWXFKdYH_s4bXmZqWVQ4JLE1yJWCvFn3WWWvLlSlmrB_xna1T9CF19HlRCAekF_3gLMtnbpEEYDFx7_1ah7dbXdJXsnPCCydSpQdh1nBexWQXsv7932_1xToYMQ3QjD1HSENonsmXeHrfBVHxBBdvwhAWbEkIRWvtpnF7fPF-pwnhMIahesPsOWgjWlQ84hS88Os9Sgd1D_RbFVVu44dRirdYOy-sAJ31cElaA5OLzU-CA7LbSajw.jpg"
+										src={info.contact.image}
 									/>
 								</div>
 								<div className="contact-qr-image">

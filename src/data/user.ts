@@ -2,6 +2,7 @@ import AboutImage from "@/assets/images/about.jpg";
 import EmsLogo from "@/assets/images/ems.png";
 import HomepageImage from "@/assets/images/homepage.jpg";
 import Logo from "@/assets/images/logo.jpg";
+import ProfileImage from "@/assets/images/profile.jpg";
 import { ReactComponent as QRCode } from "@/assets/images/qr-code.svg";
 import SuaiLogo from "@/assets/images/suai.svg";
 import type { UserData } from "types/types";
@@ -135,14 +136,6 @@ const info: UserData = {
 				link: "https://github.com/grigorijtomczuk/floppa-the-bird",
 			},
 			{
-				title: "Strawberrette The Pig",
-				description:
-					"Telegram-бот, который имеет некоторую практическую и эстетическую ценность.",
-				logos: ["python"],
-				linkText: "Исходный код",
-				link: "https://github.com/grigorijtomczuk/strawberrette-pig",
-			},
-			{
 				title: "TODO React TypeScript",
 				description:
 					"Простое TODO приложение, написанное на Vite React в связке с TypeScript.",
@@ -170,6 +163,7 @@ const info: UserData = {
 			Пишите мне на <a class="general-link" href="mailto:${mainInfo.email}">почту</a> или
 			в <a class="general-link" href="${socialsInfo.telegram}" target="_blank">Telegram</a> —
 			буду рад обсудить любые вопросы, связанные с проектами, работой или сотрудничеством.`,
+		image: ProfileImage,
 		qrCode: QRCode,
 	},
 };
