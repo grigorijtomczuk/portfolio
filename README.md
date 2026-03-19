@@ -11,8 +11,9 @@
 </p>
 
 <div align=center>
-	<img src="https://img.shields.io/github/repo-size/grigorijtomczuk/multipage-portfolio" alt="GitHub Repo Size">
-	<img src="https://img.shields.io/github/license/grigorijtomczuk/multipage-portfolio" alt="GitHub License Type">
+	<img src="https://img.shields.io/github/package-json/v/grigorijtomczuk/portfolio" alt="Version">
+	<img src="https://img.shields.io/github/repo-size/grigorijtomczuk/portfolio" alt="GitHub Repo Size">
+	<img src="https://img.shields.io/github/license/grigorijtomczuk/portfolio" alt="GitHub License Type">
 </div>
 
 ## Features
@@ -55,7 +56,7 @@ To deploy the application on your GitHub Pages, fork the original repository, th
 $ npm run deploy
 ```
 
-Then, go to your `multipage-portfolio` fork settings and under the Pages tab set the deployment source to "branch", then choose the `dist` branch. In this way, the deployed application directory will be sourced from the `dist` branch of your fork.
+Then, go to your `portfolio` fork settings and under the Pages tab set the deployment source to "branch", then choose the `dist` branch. In this way, the deployed application directory will be sourced from the `dist` branch of your fork.
 
 ## License
 
