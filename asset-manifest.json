@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7d7cacb7.css",
-    "main.js": "/portfolio/static/js/main.76210c45.js",
-    "static/media/homepage.jpg": "/portfolio/static/media/homepage.b6d7a6fa152e67955814.jpg",
-    "static/media/about.jpg": "/portfolio/static/media/about.dd5e3f82dfe0e7c59b19.jpg",
-    "static/media/logo.jpg": "/portfolio/static/media/logo.74d0f60bac1ad425b183.jpg",
-    "static/media/ems.png": "/portfolio/static/media/ems.a158ed919c2497e9d59f.png",
-    "static/media/qr-code.svg": "/portfolio/static/media/qr-code.a2f9c80b5d727a089f0f5db74921c3c1.svg",
-    "static/media/suai.svg": "/portfolio/static/media/suai.d6048bd3322cdf060b0f8df864fab723.svg",
-    "index.html": "/portfolio/index.html",
-    "static/media/light-mode.svg": "/portfolio/static/media/light-mode.3c9fd53b29b189643315d3f61502d018.svg",
-    "static/media/dark-mode.svg": "/portfolio/static/media/dark-mode.bfe173b0672708a806b679997f05102e.svg",
-    "static/media/squircle.svg": "/portfolio/static/media/squircle.52c61ec32743ca35f1af.svg"
+    "main.css": "/static/css/main.d41764b1.css",
+    "main.js": "/static/js/main.0c860549.js",
+    "static/media/about.jpg": "/static/media/about.dd5e3f82dfe0e7c59b19.jpg",
+    "static/media/homepage.jpg": "/static/media/homepage.ae0bdf8e07949e28e16a.jpg",
+    "static/media/logo.jpg": "/static/media/logo.74d0f60bac1ad425b183.jpg",
+    "static/media/ems.png": "/static/media/ems.a158ed919c2497e9d59f.png",
+    "static/media/qr-code.svg": "/static/media/qr-code.a2f9c80b5d727a089f0f5db74921c3c1.svg",
+    "static/media/suai.svg": "/static/media/suai.33c75e4b6b0f23af9dae46bce291d5e1.svg",
+    "index.html": "/index.html",
+    "static/media/freelance.svg": "/static/media/freelance.c1d8a3c2e60e1652e0544309c69cd0a3.svg",
+    "static/media/light-mode.svg": "/static/media/light-mode.3c9fd53b29b189643315d3f61502d018.svg",
+    "static/media/dark-mode.svg": "/static/media/dark-mode.bfe173b0672708a806b679997f05102e.svg",
+    "static/media/squircle.svg": "/static/media/squircle.52c61ec32743ca35f1af.svg"
   },
   "entrypoints": [
-    "static/css/main.7d7cacb7.css",
-    "static/js/main.76210c45.js"
+    "static/css/main.d41764b1.css",
+    "static/js/main.0c860549.js"
   ]
 }
