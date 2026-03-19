@@ -21,7 +21,7 @@
 	--font-light: 100;
 	/* --------------------- */
 
-	--box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+	--box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 	--box-shadow-strong: 0 0 12px rgba(0, 0, 0, 0.15);
 
 	--transition-regular: 300ms ease;
@@ -46,5 +46,6 @@
 	--light-gray: #3d3d40;
 
 	/* ------- sparkly-text ------- */
+	/* have to duplicate this since it doesn't re-evaluate the value inside shadow DOM */
 	--sparkly-text-color: var(--link-transparent-color);
 }

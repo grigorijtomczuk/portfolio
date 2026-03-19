@@ -1,14 +1,14 @@
 import AboutImage from "@/assets/images/about.jpg";
 import EmsLogo from "@/assets/images/ems.png";
+import FreelanceLogo from "@/assets/images/freelance.svg";
 import HomepageImage from "@/assets/images/homepage.jpg";
 import Logo from "@/assets/images/logo.jpg";
-import ProfileImage from "@/assets/images/profile.jpg";
 import { ReactComponent as QRCode } from "@/assets/images/qr-code.svg";
 import SuaiLogo from "@/assets/images/suai.svg";
 import type { UserData } from "types/types";
 
 const experienceYears = Math.round(
-	(Date.now() - new Date("2022-06-01").getTime()) / (1000 * 60 * 60 * 24 * 365)
+	(Date.now() - new Date("2022-06-01").getTime()) / (1000 * 60 * 60 * 24 * 365),
 );
 
 const mainInfo = {
@@ -31,24 +31,30 @@ const info: UserData = {
 	socials: socialsInfo,
 
 	homepage: {
-		title: "Программист. Дизайнер. Иногда просто человек.",
+		title: "Код и дизайн без лишнего шума",
 		description:
 			"Этот сайт — о том, чем я живу: разработка, дизайн и идеи. \
 			Я верю, что технологии должны быть простыми и полезными. \
-			Если думаете так же — добро пожаловать, у нас уже есть общий язык.",
+			Если Вы думаете так же — добро пожаловать, у нас уже есть общий язык.",
 		image: HomepageImage,
 		works: [
 			{
 				image: SuaiLogo,
 				title: "СПбГУАП",
 				subtitle: "Студент",
-				duration: "Сен 2023 – Сегодня",
+				duration: "Сен 2023 – н/в",
 			},
 			{
 				image: EmsLogo,
 				title: "SUAI Embedded Systems Lab.",
 				subtitle: "Веб-разработчик",
 				duration: "Апр 2024 – Фев 2025",
+			},
+			{
+				image: FreelanceLogo,
+				title: "Фриланс",
+				subtitle: "Веб-разработчик, дизайнер",
+				duration: "Фев 2025 – н/в",
 			},
 		],
 		downloads: [
@@ -72,15 +78,18 @@ const info: UserData = {
 		description: `Моя основная деятельность связана с веб&#8209;разработкой. Я работаю с
 		<span class="code-span">frontend</span>&#8209;технологиями, изучаю <span class="code-span">
 		backend</span> и стремлюсь создавать проекты, которые сочетают
-		удобство, функциональность и современный дизайн. Опыт в этой сфере у меня уже почти
+		удобство, функциональность и современный дизайн. Мой опыт в этой сфере составляет уже
 		<span class="code-span">${experienceYears}&nbsp;${
 			experienceYears === 1 ? "год" : experienceYears < 5 ? "года" : "лет"
 		}</span>.
 		<div class="space"><div/>
-		Помимо разработки, я занимаюсь музыкой и ведением настольных ролевых игр.
-		Эти занятия помогают развивать креативное мышление и находить новые подходы
-		к работе над проектами. Для меня важно постоянно учиться и совершенствовать навыки,
-		а также находить решения, которые делают технологии простыми и полезными.`,
+		Помимо разработки, я занимаюсь электроникой, ремонтом и пайкой. Работа с «железом» помогает
+		лучше понимать, как устроены системы на практике, и развивает внимательность к деталям.
+		Этот опыт напрямую влияет на мой подход к разработке: я стремлюсь создавать надежные и
+		продуманные решения.
+		<div class="space"><div/>
+		Для меня важно постоянно учиться и совершенствовать навыки, а также находить решения,
+		которые делают технологии простыми и полезными.`,
 		image: AboutImage,
 	},
 
@@ -92,6 +101,22 @@ const info: UserData = {
 			Там Вы можете посмотреть код, ознакомиться с деталями реализации и при желании
 			внести свои предложения.`,
 		projectsList: [
+			{
+				title: "Хроника",
+				description:
+					"Многофункциональный сайт ритуального агентства «Хроника» с оригинальным дизайном на WordPress.",
+				logos: ["wordpress", "php", "sass", "typescript"],
+				linkText: "xronikaspb.ru",
+				link: "https://xronikaspb.ru",
+			},
+			{
+				title: "Grigory Tomchuk",
+				description:
+					"Мое веб-портфолио. Здесь я публикую основную информацию о моей работе.",
+				logos: ["react", "reactrouter", "typescript"],
+				linkText: "grigorijtomczuk.ru",
+				link: "https://grigorijtomczuk.ru",
+			},
 			{
 				title: "Backend API TypeScript",
 				description:
@@ -110,20 +135,12 @@ const info: UserData = {
 				link: "https://github.com/grigorijtomczuk/financial-compass",
 			},
 			{
-				title: "Portfolio",
-				description:
-					"Проект этого сайта, мое портфолио. Здесь я публикую основную информацию о моей деятельности.",
-				logos: ["react", "reactrouter", "typescript"],
-				linkText: "Исходный код",
-				link: "https://github.com/grigorijtomczuk/portfolio",
-			},
-			{
 				title: "ЛовиЛанч",
 				description:
 					'Сайт для выдуманной сети ресторанов "ЛовиЛанч". Делался по ТЗ на заказ как работа \
 					по дисциплине "Веб-технологии".',
 				logos: ["html5", "javascript", "php"],
-				linkText: "Онлайн развертка",
+				linkText: "e99676if.beget.tech",
 				link: "http://e99676if.beget.tech",
 			},
 			{
@@ -134,14 +151,6 @@ const info: UserData = {
 				logos: ["unity", "csharp"],
 				linkText: "Исходный код",
 				link: "https://github.com/grigorijtomczuk/floppa-the-bird",
-			},
-			{
-				title: "TODO React TypeScript",
-				description:
-					"Простое TODO приложение, написанное на Vite React в связке с TypeScript.",
-				logos: ["react", "typescript"],
-				linkText: "Исходный код",
-				link: "https://github.com/grigorijtomczuk/todo-react-ts",
 			},
 			{
 				title: "Goofy Pet Feeder",
@@ -163,7 +172,7 @@ const info: UserData = {
 			Пишите мне на <a class="general-link" href="mailto:${mainInfo.email}">почту</a> или
 			в <a class="general-link" href="${socialsInfo.telegram}" target="_blank">Telegram</a> —
 			буду рад обсудить любые вопросы, связанные с проектами, работой или сотрудничеством.`,
-		image: ProfileImage,
+		image: HomepageImage,
 		qrCode: QRCode,
 	},
 };

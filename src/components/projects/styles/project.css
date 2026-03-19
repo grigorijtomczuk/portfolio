@@ -47,7 +47,9 @@
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 100;
-	transition: background-color var(--transition-regular), transform var(--transition-regular);
+	transition:
+		background-color var(--transition-regular),
+		transform var(--transition-regular);
 	background-color: var(--white);
 	padding: 30px;
 	min-height: 200px;
@@ -95,7 +97,9 @@
 	position: relative;
 	vertical-align: middle;
 	z-index: 100;
-	transition: transform var(--transition-fast), background-color var(--transition-fast),
+	transition:
+		transform var(--transition-fast),
+		background-color var(--transition-fast),
 		border-color var(--transition-fast);
 	box-sizing: border-box;
 	border: 4px solid var(--light-gray);
@@ -115,6 +119,8 @@
 }
 
 .project-description {
+	max-height: 76px;
+	overflow-y: hidden;
 	color: var(--secondary-color);
 	font-size: 16px;
 }
@@ -166,6 +172,7 @@
 
 	.project-description {
 		margin-top: 16px;
+		max-height: none;
 	}
 
 	.project-link {
