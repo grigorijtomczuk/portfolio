@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
@@ -37,26 +37,28 @@
 						return;
 					}
 				}
-				(k = e.createElement(t)),
+				((k = e.createElement(t)),
 					(a = e.getElementsByTagName(t)[0]),
 					(k.async = 1),
 					(k.src = r),
-					a.parentNode.insertBefore(k, a);
+					a.parentNode.insertBefore(k, a));
 			})(
 				window,
 				document,
 				"script",
 				"https://mc.yandex.ru/metrika/tag.js?id=104720004",
-				"ym"
+				"ym",
 			);
 
 			ym(104720004, "init", {
-				ssr: false,
-				trackHash: true,
-				trackLinks: true,
-				clickmap: true,
+				ssr: true,
 				webvisor: true,
-				accurateTrackBounce: 7000,
+				trackHash: true,
+				clickmap: true,
+				referrer: document.referrer,
+				url: location.href,
+				accurateTrackBounce: true,
+				trackLinks: true,
 			});
 		</script>
 		<noscript
